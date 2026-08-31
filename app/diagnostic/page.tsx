@@ -1,32 +1,28 @@
 import Nav from "@/components/Nav";
+import DiagnosticForm from "@/components/DiagnosticForm";
 
 export const metadata = {
-  title: "Book the Diagnostic — Xavier Singletary",
+  title: "Diagnostic Checklist — Xavier Singletary",
   description:
-    "Book a GTM engineering diagnostic with Xavier Singletary. Map your stack, find what's broken, and see what to build first.",
+    "Two-minute diagnostic: check what's true for your GTM stack, get on the calendar for a call built around what you check.",
 };
 
 export default function DiagnosticPage() {
   return (
-    <>
+    <div className="diagnostic-page">
       <Nav />
-      <section className="hero" style={{ paddingBottom: "60px" }}>
-        <div className="wrap narrow">
-          <div className="section-eyebrow">STEP 01 / DIAGNOSTIC</div>
-          <h1 className="hero-headline" style={{ fontSize: "38px" }}>
-            Book the diagnostic
-          </h1>
-          <p className="hero-sub">
-            This is where the diagnostic checklist and booking form go. It&apos;s not wired up yet — reach
-            out directly below in the meantime.
+      <header>
+        <div className="wrap">
+          <div className="eyebrow">DIAGNOSTIC — 2 MINUTES</div>
+          <h1>What&apos;s actually costing you pipeline?</h1>
+          <p>
+            Check what&apos;s true for your team. Your diagnostic call gets built around what you check,
+            including things most teams don&apos;t realize are connected until they see the full list.
           </p>
-          <div className="hero-actions">
-            <a href="mailto:xaviersingletary33@gmail.com?subject=GTM%20diagnostic" className="btn-primary">
-              Email Xavier →
-            </a>
-          </div>
         </div>
-      </section>
-    </>
+      </header>
+
+      <DiagnosticForm />
+    </div>
   );
 }

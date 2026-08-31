@@ -380,3 +380,70 @@ footer{ border-top:1px solid var(--line); padding:32px 0; font-size:13px; color:
   .receipt{ flex-direction:column; align-items:flex-start; gap:6px; }
   .receipt-source{ text-align:left; }
 }
+
+/* ---------- DIAGNOSTIC CHECKLIST PAGE ---------- */
+/* Scoped under .diagnostic-page so its own .btn-primary / .field variants
+   don't leak into the shared anchor-style .btn-primary used elsewhere. */
+.diagnostic-page header{ padding:56px 0 36px; border-bottom:1px solid var(--line); }
+.diagnostic-page .eyebrow{ font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--cyan); margin-bottom:14px; }
+.diagnostic-page header h1{ font-size:32px; max-width:640px; }
+.diagnostic-page header p{ margin-top:14px; color:var(--text-dim); font-size:16px; max-width:560px; line-height:1.6; }
+
+.diagnostic-page main{ padding:48px 0 100px; display:grid; grid-template-columns: 340px 1fr; gap:56px; align-items:start; }
+
+.diagnostic-page .form-panel{
+  position:sticky; top:32px;
+  border:1px solid var(--line-bright);
+  background:var(--bg-panel);
+  padding:28px 26px;
+  border-radius:3px;
+}
+.diagnostic-page .form-title{ font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--cyan); margin-bottom:6px; }
+.diagnostic-page .form-panel h2{ font-size:20px; margin-bottom:18px; }
+
+.diagnostic-page .field{ margin-bottom:14px; }
+.diagnostic-page .field label{ display:block; font-size:12.5px; color:var(--text-dim); margin-bottom:6px; }
+.diagnostic-page .field input{
+  width:100%; background:var(--bg-panel-raised); border:1px solid var(--line);
+  color:var(--text); padding:11px 12px; font-size:14.5px; border-radius:2px;
+  font-family:'Inter', sans-serif;
+}
+.diagnostic-page .field input:focus{ outline:none; border-color:var(--cyan); }
+
+.diagnostic-page .form-panel .btn-primary{
+  display:block; text-align:center; width:100%;
+  background:var(--cyan); color:var(--bg);
+  padding:14px 20px; margin-top:22px;
+  font-size:14.5px; font-weight:500; border-radius:2px; border:none; cursor:pointer;
+  transition:background 0.2s ease, opacity 0.2s ease;
+}
+.diagnostic-page .form-panel .btn-primary:hover:not(:disabled){ background:#7ADCE8; }
+.diagnostic-page .form-panel .btn-primary:disabled,
+.diagnostic-page .form-panel .btn-primary.disabled{ opacity:0.4; pointer-events:none; }
+
+.diagnostic-page .confirm-panel{ font-size:14.5px; color:var(--text-dim); line-height:1.6; }
+.diagnostic-page .confirm-panel strong{ color:var(--text); }
+.diagnostic-page .error-note{ margin-top:14px; font-size:13px; color:var(--amber); line-height:1.5; }
+
+.diagnostic-page .checklist-head{ margin-bottom:24px; }
+.diagnostic-page .checklist-head h2{ font-size:22px; margin-bottom:8px; }
+.diagnostic-page .checklist-head p{ color:var(--text-dim); font-size:15px; }
+
+.diagnostic-page .check-item{
+  display:flex; gap:14px; align-items:flex-start;
+  padding:13px 16px; margin-bottom:1px;
+  background:var(--bg-panel); border:1px solid var(--line);
+  border-radius:3px; cursor:pointer;
+  transition:border-color 0.15s ease, background 0.15s ease;
+}
+.diagnostic-page .check-item:hover{ border-color:var(--line-bright); background:var(--bg-panel-raised); }
+.diagnostic-page .check-item.checked{ border-color:var(--cyan); background:var(--bg-panel-raised); }
+.diagnostic-page .check-item input{ margin-top:3px; accent-color:var(--cyan); width:16px; height:16px; flex-shrink:0; }
+.diagnostic-page .check-item label{ font-size:14.5px; color:var(--text-dim); line-height:1.5; cursor:pointer; }
+.diagnostic-page .check-item.checked label{ color:var(--text); }
+
+@media (max-width: 820px){
+  .diagnostic-page main{ grid-template-columns:1fr; }
+  .diagnostic-page .form-panel{ position:static; order:2; }
+  .diagnostic-page .checklist-panel{ order:1; }
+}

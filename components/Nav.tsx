@@ -13,7 +13,7 @@ export default function Nav() {
           <Link href="/#faq">FAQ</Link>
         </div>
         <Link href="/diagnostic" className="nav-cta">
-          Get the framework
+          Book a call
         </Link>
       </div>
     </nav>
