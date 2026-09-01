@@ -58,9 +58,8 @@ export default function ProofGrid() {
     <section id="proof">
       <div className="wrap">
         <div className="section-head reveal">
-          <div className="section-eyebrow">WHAT&apos;S ACTUALLY RUNNING</div>
           <h2>Proof</h2>
-          <p>Four systems, live at Gather AI. Hover a card, or tap it on mobile, for the full build.</p>
+          <p>Selected projects. Hover a card, or tap it on mobile, for the full build.</p>
         </div>
 
         <div className="proof-grid-4">

@@ -3,9 +3,8 @@ export default function Plan() {
     <section className="border-y">
       <div className="wrap" style={{ position: "relative" }}>
         <div className="section-head reveal">
-          <div className="section-eyebrow">HOW IT WORKS</div>
           <h2>Three steps. No pricing games.</h2>
-          <p>Structure is fixed. Price is disclosed in the diagnostic, not before it.</p>
+          <p>Structure is fixed. Price comes after the diagnostic, not before it.</p>
         </div>
 
         <svg className="connector" id="planConnector" viewBox="0 0 1116 2" preserveAspectRatio="none">

@@ -31,7 +31,6 @@ export default function CostGrid() {
     <section id="cost">
       <div className="wrap">
         <div className="section-head reveal">
-          <div className="section-eyebrow">WHERE IT BREAKS</div>
           <h2>What&apos;s costing you pipeline?</h2>
         </div>
 

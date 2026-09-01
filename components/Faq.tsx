@@ -9,7 +9,7 @@ const FAQS = [
   },
   {
     q: "How much does it cost?",
-    a: "Pricing depends on scope. It's set in the diagnostic, not before it. The structure is fixed: a paid diagnostic first, then a flat-fee build, then an optional monthly retainer to tune it.",
+    a: "Pricing depends on scope. It's determined after the diagnostic, not before it. The structure is fixed: a paid diagnostic first, then a flat-fee build, then an optional monthly retainer to tune it.",
   },
 ] as const;
 
@@ -18,7 +18,6 @@ export default function Faq() {
     <section className="border-y" id="faq">
       <div className="wrap">
         <div className="section-head reveal">
-          <div className="section-eyebrow">QUESTIONS</div>
           <h2>FAQ</h2>
         </div>
         <div className="faq-list">

@@ -25,9 +25,8 @@ export default function PainList() {
     <section className="border-y" id="problem">
       <div className="wrap">
         <div className="section-head reveal">
-          <div className="section-eyebrow">WHAT WE&apos;RE HEARING</div>
           <h2>What buyers actually say</h2>
-          <p>Pulled from real conversations at Gather AI, not generic pain-point copy.</p>
+          <p>Pulled from real conversations, not generic pain-point copy.</p>
         </div>
 
         <div className="pain-list">
@@ -37,10 +36,6 @@ export default function PainList() {
               <div className="pain-source">{pain.source}</div>
             </div>
           ))}
-        </div>
-
-        <div className="stakes-line reveal">
-          The alternative is a $90K RevOps hire and six months of hoping they figure it out.
         </div>
       </div>
     </section>

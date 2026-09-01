@@ -6,21 +6,18 @@ export default function Hero() {
     <section className="hero">
       <div className="wrap hero-grid">
         <div>
-          <div className="status-line hero-in" style={{ ["--d" as string]: "0s" }}>
-            <span className="dot"></span>LIVE AT GATHER AI: GTM SYSTEMS IN PRODUCTION
-          </div>
-          <h1 className="hero-headline hero-in" style={{ ["--d" as string]: "0.12s" }}>
+          <h1 className="hero-headline hero-in" style={{ ["--d" as string]: "0s" }}>
             GTM Engineering, Not Another Tool
           </h1>
-          <p className="hero-sub hero-in" style={{ ["--d" as string]: "0.24s" }}>
+          <p className="hero-sub hero-in" style={{ ["--d" as string]: "0.12s" }}>
             The tools aren&apos;t the problem. The connections between them are. I build those.
           </p>
-          <div className="hero-actions hero-in" style={{ ["--d" as string]: "0.36s" }} id="lead-magnet">
+          <div className="hero-actions hero-in" style={{ ["--d" as string]: "0.24s" }} id="lead-magnet">
             <Link href="/diagnostic" className="btn-primary">
               Book the diagnostic →
             </Link>
             <a href="#problem" className="btn-secondary">
-              See the problem
+              See what buyers actually say
             </a>
           </div>
         </div>
