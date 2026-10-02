@@ -9,9 +9,11 @@
   "expiresAt": "2026-12-01",
   "eyebrow": "FOR NENAD LAZAREVIC · GETWING",
   "headline": [
-    { "t": "This role has been open " },
+    { "t": "Your " },
+    { "t": "{role}" },
+    { "t": " posting has been open " },
     { "t": "298 days", "hl": true },
-    { "t": ". I'd build what the posting describes in " },
+    { "t": ". I'd build the system it describes in " },
     { "t": "three weeks", "hl": true },
     { "t": "." }
   ],

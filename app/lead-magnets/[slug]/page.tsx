@@ -77,6 +77,9 @@ export default async function LeadMagnetPage({
   const m = load(slug);
   if (!m || isExpired(m)) notFound();
 
+  // {role} in any copy resolves to the exact title from the job description.
+  const fill = (s: string) => (s || "").replace(/\{role\}/g, m.role);
+
   return (
     <div className="lm-page">
       <Nav />
@@ -86,11 +89,11 @@ export default async function LeadMagnetPage({
         <h1 className="lm-h1">
           {m.headline.map((s, i) => (
             <span key={i} className={s.hl ? "hl" : undefined}>
-              {s.t}
+              {fill(s.t)}
             </span>
           ))}
         </h1>
-        <p className="lm-intro">{m.intro}</p>
+        <p className="lm-intro">{fill(m.intro)}</p>
 
         {m.cta && (
           <div className="lm-cta-row">

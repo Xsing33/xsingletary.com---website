@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { BOOKING_URL } from "@/lib/links";
 
 export default function CtaFooter() {
   return (
@@ -10,9 +10,9 @@ export default function CtaFooter() {
             The diagnostic tells you exactly what to build first, and what it transfers to your stack, not
             just mine.
           </p>
-          <Link href="/diagnostic" className="btn-primary">
+          <a href={BOOKING_URL} className="btn-primary" target="_blank" rel="noopener noreferrer">
             Book the diagnostic
-          </Link>
+          </a>
         </div>
       </section>
 

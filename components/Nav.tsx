@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BOOKING_URL } from "@/lib/links";
 
 export default function Nav() {
   return (
@@ -12,9 +13,9 @@ export default function Nav() {
           <Link href="/#proof">Proof</Link>
           <Link href="/#faq">FAQ</Link>
         </div>
-        <Link href="/diagnostic" className="nav-cta">
+        <a href={BOOKING_URL} className="nav-cta" target="_blank" rel="noopener noreferrer">
           Book a call
-        </Link>
+        </a>
       </div>
     </nav>
   );

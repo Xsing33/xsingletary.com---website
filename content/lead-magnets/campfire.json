@@ -3,14 +3,14 @@
   "company": "Campfire",
   "contactName": "Matthew",
   "contactTitle": "Head of Revenue Operations",
-  "role": "Marketing Ops / AI GTM Engineer",
+  "role": "Marketing Ops/AI GTM Engineer",
   "daysOpen": 77,
   "createdAt": "2026-10-02",
   "expiresAt": "2026-12-01",
   "eyebrow": "FOR MATTHEW · CAMPFIRE",
   "headline": [
     { "t": "You're hiring a " },
-    { "t": "GTM engineer", "hl": true },
+    { "t": "{role}" },
     { "t": ". I'd build the first system in " },
     { "t": "three weeks", "hl": true },
     { "t": "." }

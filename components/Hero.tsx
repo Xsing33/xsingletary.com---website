@@ -1,5 +1,5 @@
-import Link from "next/link";
 import RadarInstrument from "./RadarInstrument";
+import { BOOKING_URL } from "@/lib/links";
 
 export default function Hero() {
   return (
@@ -13,9 +13,9 @@ export default function Hero() {
             The tools aren&apos;t the problem. The connections between them are. I build those.
           </p>
           <div className="hero-actions hero-in" style={{ ["--d" as string]: "0.24s" }} id="lead-magnet">
-            <Link href="/diagnostic" className="btn-primary">
+            <a href={BOOKING_URL} className="btn-primary" target="_blank" rel="noopener noreferrer">
               Book the diagnostic →
-            </Link>
+            </a>
             <a href="#problem" className="btn-secondary">
               See what buyers actually say
             </a>

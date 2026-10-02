@@ -10,7 +10,7 @@
   "eyebrow": "FOR KEVIN JEON · HARVEY",
   "headline": [
     { "t": "You're hiring your first " },
-    { "t": "Marketing Engineer", "hl": true },
+    { "t": "{role}" },
     { "t": ". I'd build the first version of that job in " },
     { "t": "three weeks", "hl": true },
     { "t": "." }

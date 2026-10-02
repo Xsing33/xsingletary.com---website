@@ -6,6 +6,8 @@ at `/lead-magnets/<slug>` (e.g. `getwing.json` -> `/lead-magnets/getwing`).
 ## Copy strategy
 
 - Plain words. Never "req" (people don't know it). Say role, posting, the job.
+- Name the role exactly. Write `{role}` in `headline`/`intro` and it resolves to the `role`
+  field, which must match the job description title exactly. Never "this role".
 - Lead with their situation, briefly and factually. No gotcha, no hard sell.
 - Economy of words. If a line doesn't add a fact, cut it. They opened it; respect their time.
 - Write like one person to another. Contractions, short sentences. No em dashes, no
