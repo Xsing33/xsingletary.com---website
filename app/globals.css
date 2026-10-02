@@ -428,3 +428,73 @@ footer{ border-top:1px solid var(--line); padding:32px 0; font-size:13px; color:
   .diagnostic-page .form-panel{ position:static; order:2; }
   .diagnostic-page .checklist-panel{ order:1; }
 }
+
+/* ---------- lead magnets (app/lead-magnets/[slug]) ---------- */
+.lm-main{ max-width:960px; padding-top:56px; padding-bottom:88px; }
+.lm-eyebrow{ font-size:12px; letter-spacing:.16em; color:var(--text-faint); }
+.lm-rule{ height:3px; width:44px; background:var(--cyan); border-radius:2px; margin:14px 0 26px; }
+.lm-h1{ font-size:clamp(28px,4vw,42px); line-height:1.16; margin-bottom:18px; max-width:880px; }
+.lm-h1 .hl{ color:var(--cyan); }
+.lm-intro{ color:var(--text-dim); font-size:17px; line-height:1.6; max-width:780px; }
+
+.lm-sec{ margin-top:56px; }
+.lm-sec h2{
+  font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--text-faint); font-weight:500;
+  display:flex; align-items:center; gap:14px; margin-bottom:20px;
+}
+.lm-sec h2::after{ content:""; flex:1; height:1px; background:var(--line); }
+
+.lm-flow{ display:flex; flex-wrap:wrap; align-items:stretch; }
+.lm-flow-item{ display:flex; align-items:stretch; flex:1 1 0; min-width:150px; }
+.lm-arrow{ flex:0 0 30px; display:flex; align-items:center; justify-content:center; color:var(--line-bright); font-size:18px; }
+.lm-node{ flex:1 1 0; min-width:150px; background:var(--bg-panel); border:1px solid var(--line); border-radius:12px; padding:16px; }
+.lm-node.core{ border-color:var(--cyan); background:linear-gradient(180deg, rgba(90,209,224,.08), rgba(90,209,224,.02)); }
+.lm-node .k{ font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--text-faint); }
+.lm-node .t{ font-family:'Space Grotesk',sans-serif; font-size:15px; color:var(--text); margin-top:2px; }
+.lm-node .d{ font-size:13px; color:var(--text-dim); line-height:1.5; margin-top:5px; }
+
+.lm-outhead{ font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--text-faint); margin:22px 0 12px; }
+.lm-grid3{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+
+.lm-step .n{
+  width:26px; height:26px; border-radius:50%; background:var(--bg-panel-raised);
+  border:1px solid var(--line-bright); color:var(--cyan); font-size:12px;
+  display:flex; align-items:center; justify-content:center; margin-bottom:12px;
+}
+.lm-step h3{ font-size:16px; margin-bottom:6px; color:var(--text); }
+.lm-step p{ font-size:13.5px; color:var(--text-dim); line-height:1.55; }
+
+.lm-wk{ border-top:3px solid var(--cyan); padding-top:14px; }
+.lm-wk .w{ font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--cyan); }
+.lm-wk .h{ font-family:'Space Grotesk',sans-serif; font-size:16px; margin:6px 0 4px; }
+.lm-wk p{ font-size:13px; color:var(--text-dim); line-height:1.55; }
+
+.lm-proof{
+  background:var(--bg-panel-raised); border:1px solid var(--line); border-radius:14px;
+  padding:26px 28px; display:flex; align-items:center; gap:34px; flex-wrap:wrap;
+}
+.lm-nums{ display:flex; gap:34px; }
+.lm-nums .v{ font-family:'Space Grotesk',sans-serif; font-size:34px; color:var(--cyan); line-height:1.05; }
+.lm-nums .v .l{ display:block; font-size:14px; color:var(--text-dim); font-family:'Inter',sans-serif; }
+.lm-proof .cap{ font-size:14px; color:var(--text-dim); max-width:440px; line-height:1.55; }
+
+.lm-ask{ border:1px solid var(--line); border-left:3px solid var(--green); border-radius:12px; background:var(--bg-panel); padding:22px 24px; }
+.lm-ask .t{ font-family:'Space Grotesk',sans-serif; font-size:17px; margin-bottom:6px; }
+.lm-ask p{ font-size:14px; color:var(--text-dim); line-height:1.6; max-width:700px; }
+
+.lm-foot{
+  margin-top:52px; padding-top:20px; border-top:1px solid var(--line);
+  display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  font-size:13px; color:var(--text-faint);
+}
+.lm-foot b{ color:var(--text); font-weight:600; }
+
+@media (max-width: 820px){
+  .lm-grid3{ grid-template-columns:1fr; }
+  .lm-flow{ flex-direction:column; }
+  .lm-flow-item{ flex-direction:column; }
+  .lm-arrow{ transform:rotate(90deg); height:24px; }
+  .lm-h1{ font-size:28px; }
+  .lm-nums{ gap:24px; }
+}
