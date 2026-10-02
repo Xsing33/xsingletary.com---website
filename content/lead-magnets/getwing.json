@@ -7,52 +7,43 @@
   "daysOpen": 298,
   "createdAt": "2026-10-02",
   "expiresAt": "2026-12-01",
-  "eyebrow": "PREPARED FOR NENAD LAZAREVIC — CMO, GETWING",
+  "eyebrow": "FOR NENAD LAZAREVIC · GETWING",
   "headline": [
-    { "t": "Your outbound engineer req has been open " },
+    { "t": "This role has been open " },
     { "t": "298 days", "hl": true },
-    { "t": ". The system it describes ships in " },
+    { "t": ". I'd build what the posting describes in " },
     { "t": "three weeks", "hl": true },
     { "t": "." }
   ],
-  "intro": "Your JD calls for one of the most advanced outbound engines in the world: Apollo for data, Clay for the workflow, HubSpot and Salesforce as the CRM spine, and a path from 5k to 250k emails a month. The system is well specified. The gap is that nobody is building it while you recruit. I build exactly this, fractionally. Here is the system I would ship for GetWing.",
+  "intro": "The posting lays out an outbound engine: Apollo for data, Clay for the workflow, HubSpot and Salesforce as the CRM. The design is clear. It just isn't built yet. I build systems like this on contract, and I'd start with yours.",
   "build": {
     "chain": [
-      { "k": "Source", "t": "Apollo", "d": "ICP accounts and contacts pulled by API" },
-      { "k": "Engine", "t": "Clay", "d": "Enrich, verify, score ICP fit, personalize", "core": true },
-      { "k": "Router", "t": "Logic", "d": "Dedupe vs CRM, route by fit and intent" }
+      { "k": "Source", "t": "Apollo", "d": "Accounts and contacts by API" },
+      { "k": "Engine", "t": "Clay", "d": "Enrich, verify, score, personalize", "core": true },
+      { "k": "Routing", "t": "Fit and intent", "d": "Dedupe against your CRM, route by score" }
     ],
-    "outputsLabel": "SHIPS TO THE TOOLS YOUR TEAM ALREADY USES",
+    "outputsLabel": "SHIPS TO THE TOOLS YOU ALREADY USE",
     "outputs": [
-      { "t": "HubSpot", "d": "Nurture sequences, reply intent tracked" },
-      { "t": "Salesforce", "d": "AE tasks on sales-ready accounts" },
-      { "t": "Instantly", "d": "Sending from warmed, rotated domains" }
+      { "t": "HubSpot", "d": "Nurture sequences, replies tracked" },
+      { "t": "Salesforce", "d": "Tasks for sales on ready accounts" },
+      { "t": "Instantly", "d": "Sends from warmed domains" }
     ]
   },
-  "steps": [
-    { "n": "1", "h": "Extract", "p": "Apollo company and contact data into Clay tables, plus web scraping for technographics and job-posting signals that show an automation need. LeadMagic and BounceBan verification run before anything touches a domain." },
-    { "n": "2", "h": "Connect", "p": "Clay normalizes size and industry, dedupes against HubSpot, applies weighted ICP scoring, then webhook-routes each record to the right destination. Low-fit and undeliverable records drop to suppression, not to your reps." },
-    { "n": "3", "h": "Ship", "p": "A daily cohort of scored, enriched, personalized leads auto-loads into Instantly with persona-mapped copy variants. Reply intent lands in a HubSpot dashboard for AE pickup. No manual list pulls, no spreadsheet handoffs." }
-  ],
   "timeline": [
-    { "w": "Week 1", "h": "Extract", "p": "Apollo into Clay, verification stack, ICP scoring logic. First scored records visible." },
-    { "w": "Week 2", "h": "Connect", "p": "Routing rules, CRM dedupe, Instantly domain pools, persona copy variants." },
-    { "w": "Week 3", "h": "Ship", "p": "Live daily cohort and reply dashboard, plus a handover doc so your team owns it." }
-  ],
-  "outcomes": [
-    { "t": "Outbound runs now", "d": "Not in six months when the seat fills. The engine works while you keep recruiting." },
-    { "t": "250k a month, no collapse", "d": "Deliverability and domain rotation are built in, not bolted on after the bounce rate spikes." },
-    { "t": "Reply intent in the CRM", "d": "Every open, reply, and meeting tied to the account in HubSpot, not a spreadsheet." }
+    { "w": "Week 1", "h": "Extract", "p": "Apollo into Clay. Verification and ICP scoring. First scored accounts visible." },
+    { "w": "Week 2", "h": "Connect", "p": "Routing rules, CRM dedupe, warmed domain pools, copy variants per persona." },
+    { "w": "Week 3", "h": "Ship", "p": "A daily list lands in Instantly. Replies and meetings show up in HubSpot." }
   ],
   "proof": {
     "nums": [
       { "v": "11,000", "l": "accounts" },
       { "v": "93.9%", "l": "verified" }
     ],
-    "cap": "Account-to-Outbound: an engine I built end to end, enriching 11,000 accounts with 93.9% verified contacts and routing them into live outbound."
+    "cap": "Account-to-Outbound, an engine I built end to end: 11,000 accounts enriched, 93.9% of contacts verified."
   },
   "ask": {
-    "t": "Three weeks. One working system. Fractional.",
-    "p": "I build the account-to-outbound engine your JD describes, live in three weeks, while you keep recruiting the full-time hire. If it works, we talk about what is next. If it does not, you keep the system and we part cleanly. No vendor process, no tool rollout, no long contract."
-  }
+    "t": "Three weeks, one working system.",
+    "p": "I'd build it while you keep searching. Reply and I'll walk you through the plan in 15 minutes. If the timing's wrong, just say so."
+  },
+  "contact": { "email": "xaviersingletary33@gmail.com" }
 }

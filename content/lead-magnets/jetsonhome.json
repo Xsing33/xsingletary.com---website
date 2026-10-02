@@ -1,0 +1,40 @@
+{
+  "slug": "jetsonhome",
+  "company": "Jetson",
+  "contactName": "Justin Collett",
+  "contactTitle": "RevOps / GTM Analytics",
+  "role": "Lead Marketing Data & Analytics Engineer",
+  "daysOpen": 122,
+  "createdAt": "2026-10-02",
+  "expiresAt": "2026-12-01",
+  "eyebrow": "FOR JUSTIN COLLETT · JETSON",
+  "headline": [
+    { "t": "Your posting asks for " },
+    { "t": "sharper attribution", "hl": true },
+    { "t": " across marketing spend. I'd build it in " },
+    { "t": "three weeks", "hl": true },
+    { "t": "." }
+  ],
+  "intro": "Jetson went from $20M to $100M this year. The posting describes a marketing data lake on Iceberg, dbt, Fivetran and Metabase, with HubSpot feeding it. What's missing is the line from ad spend to closed revenue. I'd build that first, on contract.",
+  "build": {
+    "chain": [
+      { "k": "Source", "t": "HubSpot", "d": "Deals, contacts, lifecycle" },
+      { "k": "Engine", "t": "dbt", "d": "First-touch and multi-touch attribution", "core": true },
+      { "k": "Serve", "t": "Metabase", "d": "Spend, pipeline and CAC by channel" }
+    ]
+  },
+  "timeline": [
+    { "w": "Week 1", "h": "Extract", "p": "HubSpot deals and contacts into the lake through Fivetran." },
+    { "w": "Week 2", "h": "Connect", "p": "dbt models that tie ad spend to closed revenue, by channel." },
+    { "w": "Week 3", "h": "Ship", "p": "Metabase dashboards the performance team uses for budget calls." }
+  ],
+  "proof": {
+    "line": "Clay + HubSpot lead scoring model",
+    "cap": "A scoring model I built and put into production."
+  },
+  "ask": {
+    "t": "Three weeks, one system.",
+    "p": "I'd build it while you keep searching. Reply and I'll walk you through it in 15 minutes. If the timing's wrong, just say so."
+  },
+  "contact": { "email": "xaviersingletary33@gmail.com" }
+}

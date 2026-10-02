@@ -477,6 +477,7 @@ footer{ border-top:1px solid var(--line); padding:32px 0; font-size:13px; color:
 .lm-nums{ display:flex; gap:34px; }
 .lm-nums .v{ font-family:'Space Grotesk',sans-serif; font-size:34px; color:var(--cyan); line-height:1.05; }
 .lm-nums .v .l{ display:block; font-size:14px; color:var(--text-dim); font-family:'Inter',sans-serif; }
+.lm-big{ font-family:'Space Grotesk',sans-serif; font-size:22px; color:var(--cyan); line-height:1.25; max-width:340px; }
 .lm-proof .cap{ font-size:14px; color:var(--text-dim); max-width:440px; line-height:1.55; }
 
 .lm-ask{ border:1px solid var(--line); border-left:3px solid var(--green); border-radius:12px; background:var(--bg-panel); padding:22px 24px; }

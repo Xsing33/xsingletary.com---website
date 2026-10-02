@@ -1,0 +1,49 @@
+{
+  "slug": "campfire",
+  "company": "Campfire",
+  "contactName": "Matthew",
+  "contactTitle": "Head of Revenue Operations",
+  "role": "Marketing Ops / AI GTM Engineer",
+  "daysOpen": 77,
+  "createdAt": "2026-10-02",
+  "expiresAt": "2026-12-01",
+  "eyebrow": "FOR MATTHEW · CAMPFIRE",
+  "headline": [
+    { "t": "You're hiring a " },
+    { "t": "GTM engineer", "hl": true },
+    { "t": ". I'd build the first system in " },
+    { "t": "three weeks", "hl": true },
+    { "t": "." }
+  ],
+  "intro": "The posting covers the revenue stack end to end: lead scoring, routing, the lead-to-opportunity handoff, and attribution, across HubSpot, Salesforce and Segment. I build this on contract, and I'd start with routing.",
+  "build": {
+    "chain": [
+      { "k": "Source", "t": "HubSpot + Salesforce", "d": "Leads and activity" },
+      { "k": "Engine", "t": "Scoring", "d": "Fit and intent, in Clay", "core": true },
+      { "k": "Routing", "t": "Handoff", "d": "Sales-ready leads to the right owner" }
+    ],
+    "outputsLabel": "SHIPS TO THE TOOLS YOU ALREADY USE",
+    "outputs": [
+      { "t": "HubSpot", "d": "Nurture the not-ready" },
+      { "t": "Salesforce", "d": "Tasks for the ready" },
+      { "t": "Dashboard", "d": "Attribution by campaign" }
+    ]
+  },
+  "timeline": [
+    { "w": "Week 1", "h": "Extract", "p": "Leads and activity from HubSpot and Salesforce, into one place." },
+    { "w": "Week 2", "h": "Connect", "p": "Scoring and routing rules, with dedupe across both systems." },
+    { "w": "Week 3", "h": "Ship", "p": "Live routing, plus an attribution dashboard for the team." }
+  ],
+  "proof": {
+    "nums": [
+      { "v": "11,000", "l": "accounts" },
+      { "v": "93.9%", "l": "verified" }
+    ],
+    "cap": "Account-to-Outbound, an engine I built end to end: 11,000 accounts enriched, 93.9% of contacts verified."
+  },
+  "ask": {
+    "t": "Three weeks, one system.",
+    "p": "I'd build it while you keep searching. Reply and I'll walk you through it in 15 minutes. If the timing's wrong, just say so."
+  },
+  "contact": { "email": "xaviersingletary33@gmail.com" }
+}
