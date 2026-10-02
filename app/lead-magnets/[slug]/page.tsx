@@ -33,6 +33,7 @@ type Magnet = {
   outcomes?: { t: string; d: string }[];
   proof?: { nums?: { v: string; l: string }[]; line?: string; cap: string };
   ask?: { t: string; p: string };
+  cta?: { label: string; url: string; micro?: string };
   contact?: { email: string };
 };
 
@@ -90,6 +91,15 @@ export default async function LeadMagnetPage({
           ))}
         </h1>
         <p className="lm-intro">{m.intro}</p>
+
+        {m.cta && (
+          <div className="lm-cta-row">
+            <a className="btn-primary" href={m.cta.url} target="_blank" rel="noopener noreferrer">
+              {m.cta.label}
+            </a>
+            {m.cta.micro && <span className="lm-cta-micro">{m.cta.micro}</span>}
+          </div>
+        )}
 
         {m.build && (
           <section className="lm-sec">
@@ -154,6 +164,17 @@ export default async function LeadMagnetPage({
           </section>
         )}
 
+        {m.cta && (
+          <section className="lm-sec">
+            <div className="lm-ctaband">
+              <div className="t">Want this built for your stack?</div>
+              <a className="btn-primary" href={m.cta.url} target="_blank" rel="noopener noreferrer">
+                {m.cta.label}
+              </a>
+            </div>
+          </section>
+        )}
+
         {m.outcomes && (
           <section className="lm-sec">
             <h2>What changes</h2>
@@ -193,6 +214,16 @@ export default async function LeadMagnetPage({
             <div className="lm-ask">
               <div className="t">{m.ask.t}</div>
               <p>{m.ask.p}</p>
+              {m.cta && (
+                <a
+                  className="btn-primary lm-ask-btn"
+                  href={m.cta.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {m.cta.label}
+                </a>
+              )}
             </div>
           </section>
         )}

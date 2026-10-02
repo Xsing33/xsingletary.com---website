@@ -32,6 +32,7 @@ optional sections — omit a key and its section disappears, so shorter stays sh
 - `outcomes` — `{ t, d }[]`
 - `proof` — `{ nums?: {v, l}[], line?: string, cap }`  (use `line` when there's no number)
 - `ask` — `{ t, p }`
+- `cta` — `{ label, url, micro? }`  (renders 3 times: hero, after the plan, and the ask; omit and no CTA shows)
 - `contact` — `{ email }`  (renders in the footer)
 
 ## Proof bank (verbatim only)

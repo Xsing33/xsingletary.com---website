@@ -430,14 +430,14 @@ footer{ border-top:1px solid var(--line); padding:32px 0; font-size:13px; color:
 }
 
 /* ---------- lead magnets (app/lead-magnets/[slug]) ---------- */
-.lm-main{ max-width:960px; padding-top:56px; padding-bottom:88px; }
+.lm-main{ max-width:960px; padding-top:44px; padding-bottom:72px; }
 .lm-eyebrow{ font-size:12px; letter-spacing:.16em; color:var(--text-faint); }
 .lm-rule{ height:3px; width:44px; background:var(--cyan); border-radius:2px; margin:14px 0 26px; }
 .lm-h1{ font-size:clamp(28px,4vw,42px); line-height:1.16; margin-bottom:18px; max-width:880px; }
 .lm-h1 .hl{ color:var(--cyan); }
 .lm-intro{ color:var(--text-dim); font-size:17px; line-height:1.6; max-width:780px; }
 
-.lm-sec{ margin-top:56px; }
+.lm-sec{ padding:0; margin-top:40px; }
 .lm-sec h2{
   font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.14em;
   text-transform:uppercase; color:var(--text-faint); font-weight:500;
@@ -483,6 +483,17 @@ footer{ border-top:1px solid var(--line); padding:32px 0; font-size:13px; color:
 .lm-ask{ border:1px solid var(--line); border-left:3px solid var(--green); border-radius:12px; background:var(--bg-panel); padding:22px 24px; }
 .lm-ask .t{ font-family:'Space Grotesk',sans-serif; font-size:17px; margin-bottom:6px; }
 .lm-ask p{ font-size:14px; color:var(--text-dim); line-height:1.6; max-width:700px; }
+.lm-ask-btn{ margin-top:18px; }
+
+/* CTAs */
+.lm-cta-row{ display:flex; align-items:center; gap:16px; flex-wrap:wrap; margin-top:26px; }
+.lm-cta-micro{ color:var(--text-dim); font-size:13.5px; }
+.lm-ctaband{
+  display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap;
+  background:var(--bg-panel-raised); border:1px solid var(--line-bright); border-radius:12px;
+  padding:20px 24px;
+}
+.lm-ctaband .t{ font-family:'Space Grotesk',sans-serif; font-size:17px; color:var(--text); }
 
 .lm-foot{
   margin-top:52px; padding-top:20px; border-top:1px solid var(--line);
