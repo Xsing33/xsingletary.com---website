@@ -14,7 +14,7 @@ export default function Nav() {
           <Link href="/#faq">FAQ</Link>
         </div>
         <a href={BOOKING_URL} className="nav-cta" target="_blank" rel="noopener noreferrer">
-          Book a call
+          Book a 30-minute call
         </a>
       </div>
     </nav>

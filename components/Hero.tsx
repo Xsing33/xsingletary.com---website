@@ -14,7 +14,7 @@ export default function Hero() {
           </p>
           <div className="hero-actions hero-in" style={{ ["--d" as string]: "0.24s" }} id="lead-magnet">
             <a href={BOOKING_URL} className="btn-primary" target="_blank" rel="noopener noreferrer">
-              Book the diagnostic →
+              Book a 30-minute call
             </a>
             <a href="#problem" className="btn-secondary">
               See what buyers actually say
