@@ -5,6 +5,10 @@ export default function CtaFooter() {
     <>
       <section className="cta-block" id="book">
         <div className="wrap">
+          <p className="cta-guarantee">
+            If your reps don&apos;t tell me it saves them 30 minutes a day in the first week,
+            you don&apos;t pay the final invoice. You keep the ICP report regardless.
+          </p>
           <a href={BOOKING_URL} className="btn-primary" target="_blank" rel="noopener noreferrer">
             Book a 30-minute call
           </a>

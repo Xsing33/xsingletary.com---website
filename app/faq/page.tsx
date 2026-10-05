@@ -14,7 +14,7 @@ function load(): Tier[] {
 }
 
 export const metadata: Metadata = {
-  title: "GTM Engineering FAQ — Xavier Singletary",
+  title: "GTM engineering FAQ: scoring, intent data, call analysis",
   description:
     "Direct answers on GTM engineering: account scoring, lead scoring from closed-won data, replacing intent data, call analysis, ICP models, and what a GTM engineer actually does.",
   alternates: { canonical: "https://xsingletary.com/faq" },

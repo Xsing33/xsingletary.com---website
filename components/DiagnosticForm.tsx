@@ -31,6 +31,7 @@ export default function DiagnosticForm() {
   const [company, setCompany] = useState("");
   const [checked, setChecked] = useState<Set<number>>(new Set());
   const [status, setStatus] = useState<Status>("idle");
+  const [nudge, setNudge] = useState("");
 
   const formValid = name.trim().length > 0 && email.includes("@");
   const anyChecked = checked.size > 0;
@@ -46,7 +47,17 @@ export default function DiagnosticForm() {
   }
 
   async function handleSubmit() {
-    if (!canSubmit) return;
+    // Button stays enabled on purpose. A disabled button with no explanation
+    // is a drop-off point; tell them what's missing instead.
+    if (!canSubmit) {
+      setNudge(
+        !anyChecked
+          ? "Check at least one thing that's true for your team, then send it."
+          : "Add your name and a work email so I know where to follow up."
+      );
+      return;
+    }
+    setNudge("");
     setStatus("submitting");
     try {
       const res = await fetch("/api/diagnostic-submit", {
@@ -68,6 +79,26 @@ export default function DiagnosticForm() {
 
   return (
     <main className="wrap">
+      <div className="checklist-panel">
+        <div className="checklist-head">
+          <h2>What&apos;s true for your team?</h2>
+          <p>Check everything that applies. Nothing here commits you to anything.</p>
+        </div>
+        <div id="checklist">
+          {ITEMS.map((item, i) => (
+            <div className={`check-item${checked.has(i) ? " checked" : ""}`} key={item.text}>
+              <input type="checkbox" id={`item-${i}`} checked={checked.has(i)} onChange={() => toggle(i)} />
+              <label htmlFor={`item-${i}`}>{item.text}</label>
+            </div>
+          ))}
+        </div>
+        <p className="check-count">
+          {checked.size === 0
+            ? "Nothing checked yet."
+            : `${checked.size} of ${ITEMS.length} checked. Your call gets built around these.`}
+        </p>
+      </div>
+
       <div className="form-panel">
         {status === "success" ? (
           <>
@@ -82,6 +113,10 @@ export default function DiagnosticForm() {
           <>
             <div className="form-title">START YOUR DIAGNOSTIC</div>
             <h2>Get on the calendar</h2>
+            <p className="form-note">
+              Add your details and I&apos;ll follow up to book a 30-minute call. The
+              diagnostic itself costs nothing.
+            </p>
 
             <div className="field">
               <label htmlFor="fName">Name</label>
@@ -114,9 +149,11 @@ export default function DiagnosticForm() {
               />
             </div>
 
-            <button className="btn-primary" disabled={!canSubmit} onClick={handleSubmit}>
-              {status === "submitting" ? "Booking…" : "Book Your Diagnostic"}
+            <button className="btn-primary" onClick={handleSubmit}>
+              {status === "submitting" ? "Sending…" : "Book Your Diagnostic"}
             </button>
+
+            {nudge && <p className="error-note">{nudge}</p>}
 
             {status === "error" && (
               <p className="error-note">
@@ -126,21 +163,6 @@ export default function DiagnosticForm() {
             )}
           </>
         )}
-      </div>
-
-      <div className="checklist-panel">
-        <div className="checklist-head">
-          <h2>What&apos;s true for your team?</h2>
-          <p>Check everything that applies. Nothing here commits you to anything.</p>
-        </div>
-        <div id="checklist">
-          {ITEMS.map((item, i) => (
-            <div className={`check-item${checked.has(i) ? " checked" : ""}`} key={item.text}>
-              <input type="checkbox" id={`item-${i}`} checked={checked.has(i)} onChange={() => toggle(i)} />
-              <label htmlFor={`item-${i}`}>{item.text}</label>
-            </div>
-          ))}
-        </div>
       </div>
     </main>
   );
