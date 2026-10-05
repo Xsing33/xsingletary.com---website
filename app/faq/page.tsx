@@ -57,15 +57,17 @@ export default function FaqPage() {
           <section className="faq-tier" key={tier.name}>
             <h2 className="faq-tier-h">{tier.name}</h2>
             {tier.items.map((item) => (
-              <article className="faq-item" key={item.q}>
-                <h3 className="faq-q">{item.q}</h3>
-                {item.a.map((p, i) => (
-                  <p className="faq-a" key={i}>
-                    {p}
-                  </p>
-                ))}
-                {item.cta && <p className="faq-cta">{item.cta}</p>}
-              </article>
+              <details className="faq-item" key={item.q}>
+                <summary className="faq-q">{item.q}</summary>
+                <div className="faq-body">
+                  {item.a.map((p, i) => (
+                    <p className="faq-a" key={i}>
+                      {p}
+                    </p>
+                  ))}
+                  {item.cta && <p className="faq-cta">{item.cta}</p>}
+                </div>
+              </details>
             ))}
           </section>
         ))}
