@@ -1,40 +1,38 @@
 {
   "slug": "getwing",
-  "company": "GetWing",
-  "contactName": "Nenad Lazarevic",
-  "contactTitle": "CMO",
+  "company": "Wing",
+  "contactName": "",
+  "contactTitle": "",
   "role": "GTM Automation Engineer, Outbound Marketing",
   "daysOpen": 298,
   "createdAt": "2026-10-02",
   "expiresAt": "2026-12-01",
-  "eyebrow": "FOR NENAD LAZAREVIC · GETWING",
+  "eyebrow": "WING · OUTBOUND ENGINEERING",
   "headline": [
-    { "t": "Your " },
-    { "t": "{role}" },
-    { "t": " posting has been open " },
-    { "t": "298 days", "hl": true },
-    { "t": ". I'd build the system it describes in " },
-    { "t": "three weeks", "hl": true },
+    { "t": "You're taking this from " },
+    { "t": "5k to 250k emails a month", "hl": true },
+    { "t": ". That breaks on deliverability before it breaks on " },
+    { "t": "Clay", "hl": true },
     { "t": "." }
   ],
-  "intro": "The posting lays out an outbound engine: Apollo for data, Clay for the workflow, HubSpot and Salesforce as the CRM. The design is clear. It just isn't built yet. I build systems like this on contract, and I'd start with yours.",
+  "intro": "The posting is specific about the hard part: hundreds to thousands of domains, warming, DNS, DMARC, DKIM and SPF, with LeadMagic and BounceBan in the verification loop. Clay and Apollo are the parts a strong operator can already run. Inbox placement at 250k a month is the part that decides whether the rest works. I build outbound infrastructure on contract, and I'd start there.",
   "build": {
     "chain": [
-      { "k": "Source", "t": "Apollo", "d": "Accounts and contacts by API" },
-      { "k": "Engine", "t": "Clay", "d": "Enrich, verify, score, personalize", "core": true },
-      { "k": "Routing", "t": "Fit and intent", "d": "Dedupe against your CRM, route by score" }
+      { "k": "Source", "t": "Apollo", "d": "Lists cleaned with LeadMagic and BounceBan" },
+      { "k": "Deliverability", "t": "Domain pool", "d": "Hundreds of domains, warmed, DMARC, DKIM, SPF", "core": true },
+      { "k": "Engine", "t": "Clay", "d": "ICP logic, scoring, routing, personalization" }
     ],
-    "outputsLabel": "SHIPS TO THE TOOLS YOU ALREADY USE",
+    "outputsLabel": "SHIPS INTO YOUR SENDING STACK",
     "outputs": [
-      { "t": "HubSpot", "d": "Nurture sequences, replies tracked" },
-      { "t": "Salesforce", "d": "Tasks for sales on ready accounts" },
-      { "t": "Instantly", "d": "Sends from warmed domains" }
+      { "t": "Instantly", "d": "Campaigns by persona, from warmed domains" },
+      { "t": "Clay", "d": "Workflows, webhooks, custom code steps" },
+      { "t": "Dashboard", "d": "Open to reply to meeting to revenue" }
     ]
   },
   "timeline": [
-    { "w": "Week 1", "h": "Extract", "p": "Apollo into Clay. Verification and ICP scoring. First scored accounts visible." },
-    { "w": "Week 2", "h": "Connect", "p": "Routing rules, CRM dedupe, warmed domain pools, copy variants per persona." },
-    { "w": "Week 3", "h": "Ship", "p": "A daily list lands in Instantly. Replies and meetings show up in HubSpot." }
+    { "w": "Week 1", "h": "Infrastructure", "p": "Domain pool, DNS, warming and verification stood up, so volume has somewhere to go." },
+    { "w": "Week 2", "h": "Clay", "p": "Workflows, ICP logic and enrichment, plus the weekly experiment loop." },
+    { "w": "Week 3", "h": "Ship", "p": "Campaigns live in Instantly, with a dashboard tracking reply and meeting rates." }
   ],
   "proof": {
     "nums": [
@@ -45,7 +43,7 @@
   },
   "ask": {
     "t": "Three weeks, one working system.",
-    "p": "I'd build it while you keep searching. Reply and I'll walk you through the plan in 15 minutes. If the timing's wrong, just say so."
+    "p": "I'd build it while you keep searching. Reply and I'll walk you through the plan. If the timing's wrong, just say so."
   },
   "cta": {
     "label": "Book a 30-minute call",
