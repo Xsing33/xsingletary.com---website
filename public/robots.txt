@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Prospect-specific pages, never indexed
+Disallow: /lead-magnets/
+Disallow: /desk
+Disallow: /desk-api
+
+Sitemap: https://xsingletary.com/sitemap.xml

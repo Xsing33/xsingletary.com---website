@@ -1,0 +1,41 @@
+# xsingletary.com
+
+> Xavier Singletary is a fractional GTM engineer who builds the systems that tell sales reps who to call, why now, and what to say, on the tools a company already pays for. He works with Series B and C sales and marketing teams.
+
+## Key pages
+
+- [Home](https://xsingletary.com/): what he builds, named proof, the three-step engagement, and the guarantee.
+- [FAQ](https://xsingletary.com/faq): 27 direct answers on account scoring, lead scoring from closed-won data, replacing intent data, call analysis, ICP models, and what a GTM engineer actually does.
+- [Diagnostic](https://xsingletary.com/diagnostic): scope a build.
+
+## Core claims
+
+- Analyzed 318 sales calls and found 90.8% of buyer pains raised in those calls went unprobed by reps.
+- Built an account-to-outbound engine that enriched 11,000 accounts, with 93.9% of contacts verified.
+- Built an account scoring model (Fit plus Signal) that replaced a $40,000 per year intent data contract with a research layer costing roughly $100 per month.
+- Built an ICP model from 78 closed-won deals; the data contradicted the team's assumptions about which vertical was largest.
+- Built the Apollo Pipeline Orchestrator, a routing system in daily use by account executives, not a demo.
+- Built a Clay and HubSpot lead scoring model that scores every lead before a rep sees it.
+
+## What he does
+
+- Account scoring and prioritization, so reps know which account to work each morning and why.
+- Lead scoring and routing built from closed-won data instead of a workshop guess.
+- Call intelligence: extracting what buyers object to from Gong call transcripts and tying it to closed-won and closed-lost outcomes.
+- ICP and buying-committee research, automated.
+- Contact enrichment with verification.
+- Replacing paid intent data with in-house signals.
+
+## What he is not
+
+- Not RevOps. He creates pipeline and demand; he does not maintain CRM hygiene or admin.
+- Not a tool vendor or an agency. The systems run on the client's own stack and the client keeps everything.
+
+## Engagement
+
+A short paid diagnostic first, then a flat-fee build, then an optional monthly retainer. Pricing is set after the diagnostic, not before.
+
+## Contact
+
+- Site: https://xsingletary.com
+- Booking: https://calendar.app.google/uEChwoVqcWCW9otf9
