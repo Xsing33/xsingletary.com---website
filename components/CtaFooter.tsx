@@ -10,7 +10,7 @@ export default function CtaFooter() {
             you don&apos;t pay the final invoice. You keep the ICP report regardless.
           </p>
           <a href={BOOKING_URL} className="btn-primary" target="_blank" rel="noopener noreferrer">
-            Book a 30-minute call
+            Run the diagnostic
           </a>
         </div>
       </section>

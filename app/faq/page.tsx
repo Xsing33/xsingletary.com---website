@@ -65,7 +65,16 @@ export default function FaqPage() {
                       {p}
                     </p>
                   ))}
-                  {item.cta && <p className="faq-cta">{item.cta}</p>}
+                  {item.cta && (
+                    <a
+                      className="faq-cta"
+                      href={BOOKING_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {item.cta}
+                    </a>
+                  )}
                 </div>
               </details>
             ))}
@@ -83,7 +92,7 @@ export default function FaqPage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Book a 30-minute call
+            Run the diagnostic
           </a>
         </div>
       </main>

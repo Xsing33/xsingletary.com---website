@@ -9,9 +9,9 @@
       "Most teams score accounts on gut feel, \"this one feels hot.\" That's not scoring. That's guessing.",
       "Real account scoring runs on two axes: Fit and Signal. Fit measures how well the account matches your ICP (industry, revenue, headcount, tech stack, facility count, whatever your closed-won data says matters). Signal measures what the account is doing right now that indicates they might buy (hiring in ops roles, expansion news, earnings mentions of inventory/labor problems, recent funding, leadership changes).",
       "Build the model from your actual closed-won deals. Pull every won deal. Find the attributes that correlate with winning. Weight them. Scale to 0-100. Set verdict thresholds: accounts above a Fit+Signal combo get worked first. Accounts below a floor get dropped. The system should answer one question every morning: \"which account do I work today and why?\"",
-      "When I built the In-Market Confidence Score at Gather AI, the model scored on Fit + Engagement + Trigger Events + Evaluation Signals. It replaced a $40K/year intent data contract with a multi-agent research layer costing ~$100/month. The reps stopped guessing."
+      "When I built the In-Market Confidence Score at Gather AI, the model scored on Fit + Engagement + Trigger Events + Evaluation Signals. The reps stopped guessing."
      ],
-     "cta": "I build account scoring systems for Series B teams. DM me \"scoring\" for the full architecture spec."
+     "cta": "I build account scoring systems for Series B teams. Run the diagnostic to scope this for your team."
     },
     {
      "q": "How to build a lead scoring model from closed-won data",
@@ -22,7 +22,7 @@
       "Common bug: Director of Operations is not a C-suite persona. A Director scores a 3 on a 5-point scale, not a 5. If you misweight titles, you misroute leads. This is the #1 mistake in scoring models built from assumptions instead of evidence.",
       "When I built the ICP model at Gather AI from 78 closed-won deals, the data said things nobody expected, like ~50% of wins coming from logistics/3PL when the team thought manufacturing was bigger. The data wins every argument."
      ],
-     "cta": "I build evidence-based scoring models for Series B teams. DM me \"ICP\" for the full methodology."
+     "cta": "I build evidence-based scoring models for Series B teams. Run the diagnostic to scope this for your team."
     },
     {
      "q": "How to replace intent data with internal signals",
@@ -30,9 +30,9 @@
       "Intent data vendors charge $30-80K/year to tell you a company is \"showing intent.\" What they don't tell you: which contact to call, what to say, or why now. And the data is sold to your competitors too.",
       "You can manufacture better signals yourself. Set up monitoring for: hiring posts in ops/supply chain roles (especially ones 21+ days old, budgeted and unstaffed), earnings call mentions of inventory problems or labor shortages, facility expansion announcements, leadership changes in ops roles, and recent funding rounds. Each of these is a free, public signal that's often more timely than vendor intent data.",
       "Use a multi-agent AI layer to scan these sources, extract the signal, and score it against your ICP weights. The output is the same 0-100 score an intent vendor gives you, but it's tuned to your actual buyers, your actual verticals, and your actual closed-won patterns. And it costs ~$100/month in tokens instead of a five-figure contract.",
-      "At Gather AI, I replaced a $40K/year intent data contract with exactly this: a multi-agent research system scanning hiring surges, expansion news, earnings language, and competitive mentions. The signals were better because they were specific to warehouse/inventory operations, something a generic intent vendor would never catch."
+      "At Gather AI, I built a multi-agent research system that scanned hiring surges, expansion news, earnings language, and competitive mentions. The signals were better because they were specific to warehouse/inventory operations, something a generic intent vendor would never catch."
      ],
-     "cta": "I build intent replacement systems for Series B teams. DM me \"signals\" for the cost comparison."
+     "cta": "I build intent replacement systems for Series B teams. Run the diagnostic to scope this for your team."
     },
     {
      "q": "How to analyze sales calls at scale",
@@ -42,7 +42,7 @@
       "You'll find things that coaching one call at a time would never surface. One stat from a 318-call analysis at Gather AI: 90.8% of buyer pains raised went unprobed by reps. The rep heard the pain. They acknowledged it. They moved on. They never asked \"what happens if you don't fix this?\" or \"how much is this costing you?\" or \"who else feels this pain?\" Across 1,139 rep questions classified, the pattern was consistent.",
       "This isn't about blaming reps. It's about knowing what to coach. If 90% of missed opportunities are in discovery questioning, you don't need a new script, you need discovery training. The data tells you exactly where to focus."
      ],
-     "cta": "I build call intelligence pipelines that extract these patterns and ship them as interactive reports. DM me \"calls\" to see the methodology."
+     "cta": "I build call intelligence pipelines that extract these patterns and ship them as interactive reports. Run the diagnostic to scope this for your team."
     },
     {
      "q": "How to build an ICP from real CRM data",
@@ -53,7 +53,7 @@
       "The result is an ICP defined by evidence, not opinion. When sales and marketing argue about lead quality, you point to the data. When a rep wants to work an account outside ICP, they need to explain why. The ICP runs the pipeline now, not the loudest person in the room.",
       "At Gather AI, the closed-won autopsy of 78 deals revealed that ~50% of wins were logistics/3PL, VP Operations and COO dominated, and the deal sweet spot was $100-250K with a multi-site land-and-expand pattern. Tribal knowledge said manufacturing was bigger. The data said otherwise."
      ],
-     "cta": "I run ICP autopsies for Series B teams as Phase 1 of the Pipeline Engine. DM me \"ICP\" if you want the template."
+     "cta": "I run ICP autopsies for Series B teams as Phase 1 of the Pipeline Engine. Run the diagnostic to scope this for your team."
     },
     {
      "q": "How to automate account research for SDRs",
@@ -63,7 +63,7 @@
       "The output lands in Slack or email before the rep starts their day. They review, personalize if needed, and go. Research time drops from hours to minutes.",
       "I built this at Gather AI in two forms: the Apollo Pipeline Orchestrator (automated daily driver that picks, researches, and stages accounts) and the 309-account enrichment engine (batch pipeline across 5 verticals with automated remediation when accounts returned zero results). Both systems run unattended."
      ],
-     "cta": "I build account research automation for Series B teams. DM me \"research\" and I'll send you the architecture."
+     "cta": "I build account research automation for Series B teams. Run the diagnostic to scope this for your team."
     },
     {
      "q": "How to find the buying committee at target accounts",
@@ -73,7 +73,7 @@
       "For each role, find the specific person. Enrich them. Map their angle. The economic buyer gets a business case. The champion gets a tool that makes their life easier. The technical buyer gets integration specs. The blocker gets a risk mitigation plan. Four people, four messages, one account plan.",
       "At Gather AI, the buying committee mapping was built into the enrichment pipeline: the AI didn't just find contacts, it identified which ones were buying-party candidates based on title, function, and reporting structure. SDRs got a reasoned brief, not just a list."
      ],
-     "cta": "I build buying committee mapping into every Pipeline Engine engagement. DM me \"committee\" for a real example."
+     "cta": "I build buying committee mapping into every Pipeline Engine engagement. Run the diagnostic to scope this for your team."
     },
     {
      "q": "How to enrich contacts programmatically",
@@ -83,7 +83,7 @@
       "The hard parts are rate limiting (stay under 2,000/day, sleep 200-300ms between pages), domain validation (Caterpillar is cat.com, not caterpillar.com, wrong domain returns zero results silently), and state management (track which accounts have been processed so a re-run doesn't double-work).",
       "At Gather AI, the 309-account enrichment pipeline ran across 5 verticals with state files, checkpoints, and automated remediation. 23 of 64 zero-result accounts were recovered by the seniority-only retry, producing 246 additional contacts with 93.9% verified emails."
      ],
-     "cta": "I build enrichment pipelines for Series B teams. DM me \"enrich\" for the full playbook."
+     "cta": "I build enrichment pipelines for Series B teams. Run the diagnostic to scope this for your team."
     },
     {
      "q": "How to fix a pipeline when nobody knows which accounts to work",
@@ -93,7 +93,7 @@
       "Accounts get worked in verdict order, ranked within each tier by combined score. The system picks the next account every morning. Reps don't choose, they execute. Pipeline becomes a machine instead of a lottery.",
       "I built this exact verdict system into the Apollo Pipeline Orchestrator at Gather AI. 11+ accounts scored and ranked with automated daily execution. The system worked one account per day, the rep reviewed and sent."
      ],
-     "cta": "I build pipeline prioritization systems for Series B teams. DM me \"pipeline\" for the verdict framework."
+     "cta": "I build pipeline prioritization systems for Series B teams. Run the diagnostic to scope this for your team."
     },
     {
      "q": "How to set up automated pre-call briefings",
@@ -103,7 +103,7 @@
       "The format should be skimmable. A rep has 2-3 minutes before dialing. Bullets, not paragraphs. Decision-ready, not research-in-progress. \"DHL is expanding 3 DCs in Q3. COO mentioned labor shortages in earnings. Key contact: VP Ops Jane Smith, focus on cycle count accuracy as the floor pain.\"",
       "At Gather AI, the prospecting bot delivered these briefs to Slack. Reps went from 30-60 minutes of manual prep to opening a message and going. It wasn't about making them better researchers, it was about making research unnecessary."
      ],
-     "cta": "I build pre-call briefing automation for Series B teams. DM me \"brief\" for the template."
+     "cta": "I build pre-call briefing automation for Series B teams. Run the diagnostic to scope this for your team."
     },
     {
      "q": "How to operationalize competitor intel from sales calls",
@@ -113,7 +113,7 @@
       "The output is a living competitive intelligence report, updated automatically. Sales leadership sees which competitors are killing deals and at what stage. Product sees what features prospects keep comparing. Marketing gets actual language buyers use about competitors, not analyst reports, but real words from real calls.",
       "At Gather AI, the Gong call intelligence pipeline mined competitor mentions across 300+ calls. The data revealed patterns that individual call reviews never would: which competitor showed up at which deal stage, which ones were increasing in frequency, and what buyers actually said about them."
      ],
-     "cta": "I build competitive intelligence pipelines from call data. DM me \"competitors\" for the methodology."
+     "cta": "I build competitive intelligence pipelines from call data. Run the diagnostic to scope this for your team."
     },
     {
      "q": "How to structure a GTM data warehouse",
@@ -123,7 +123,7 @@
       "The warehouse doesn't need to be complex. Postgres is fine. The schema is more important than the technology. Normalize enough to query across systems, denormalize enough to be fast. Index by account ID and date, those are your two most common query dimensions.",
       "The real value isn't the warehouse itself, it's what you build on top of it. Scoring models. Pipeline analytics. Call intelligence. The warehouse is plumbing. The intelligence layer is the product."
      ],
-     "cta": "I design GTM data warehouses as the foundation of the Pipeline Engine. DM me \"warehouse\" for the schema pattern."
+     "cta": "I design GTM data warehouses as the foundation of the Pipeline Engine. Run the diagnostic to scope this for your team."
     },
     {
      "q": "How to connect Gong data to Salesforce for pipeline analysis",
@@ -133,7 +133,7 @@
       "The analysis: compare calls in won deals vs lost deals. What questions do reps ask in wins that they skip in losses? How many stakeholders show up on calls in won deals vs lost deals? Which competitor names appear in lost deals at which stage? The answers aren't opinions, they're patterns in the data.",
       "When I built this at Gather AI, the 318-call analysis revealed that 90.8% of buyer pains went unprobed. That's not something you'd catch reviewing one call. It's visible only when you connect call data to deal data at scale."
      ],
-     "cta": "I build Gong-to-Salesforce integration for pipeline analysis. DM me \"gong\" to see the architecture."
+     "cta": "I build Gong-to-Salesforce integration for pipeline analysis. Run the diagnostic to scope this for your team."
     },
     {
      "q": "How to build an SDR enablement portal",
@@ -143,7 +143,7 @@
       "The publishing workflow is more important than the portal design. If adding a new report requires a developer, it'll never happen. One command should publish: drop an HTML file, run a script, it's live with a URL and a search entry. The barrier to publishing is the barrier to using.",
       "At Gather AI, the GTM Home Base portal holds 40+ live reports and tools, all published with a single `add-report.mjs` command, all searchable, all branded. SDRs don't ask for reports anymore. They search and find."
      ],
-     "cta": "I build SDR enablement portals as part of the full Pipeline Engine. DM me \"portal\" for the publishing workflow."
+     "cta": "I build SDR enablement portals as part of the full Pipeline Engine. Run the diagnostic to scope this for your team."
     },
     {
      "q": "How to set up automated outbound sequencing with AI-written content",
@@ -153,7 +153,7 @@
       "The research feeds the content: the AI already knows the account's trigger events, the contact's role, and the likely pain point. It doesn't guess, it writes from the research it already did. The content is derivative of the intelligence, not a separate step.",
       "At Gather AI, the Apollo Pipeline Orchestrator generates three pieces of personalized content per contact, email, call script, LinkedIn note, all from the same research pass. The rep reviews, hits send, and does the calls personally. The system prepares. The human confirms."
      ],
-     "cta": "I build AI-powered outbound sequencing for Series B teams. DM me \"sequence\" for the content generation framework."
+     "cta": "I build AI-powered outbound sequencing for Series B teams. Run the diagnostic to scope this for your team."
     }
    ]
   },
@@ -165,29 +165,29 @@
      "a": [
       "A GTM engineer builds the systems between your tools and your reps. They connect your CRM to your call recordings to your enrichment tools to your Slack channels, and surface the intelligence buried in all of them.",
       "Practically: they build lead scoring models from closed-won data. They automate account research so reps stop digging through LinkedIn. They extract competitive intel from sales calls. They replace intent data contracts with in-house signals that cost nothing to run. They ship the output to a portal or a Slack message so reps actually use it.",
-      "The difference from RevOps: RevOps configures tools. A GTM engineer builds systems that make the tools talk to each other. RevOps sets up HubSpot workflows. A GTM engineer builds a lead scoring engine with weights derived from 78 closed-won deals, connected to an enrichment waterfall, outputting to a Slack bot. One is configuration. One is architecture."
+      "The relationship to RevOps: RevOps owns the roadmap and keeps the stack healthy. A GTM engineer is the specialist RevOps brings in to build the systems on that roadmap, like a lead scoring engine with weights derived from 78 closed-won deals, connected to an enrichment waterfall and shipped to a Slack bot. RevOps knows what needs to be built. I build it so they don't have to stop running the business to write code."
      ],
-     "cta": "I've built nine production GTM systems at Gather AI, including a self-driving outbound orchestrator, a call intelligence pipeline, and a portal that holds 40+ live reports. I build the same stack for Series B teams. DM me \"GTME\" for the full portfolio."
+     "cta": "I've built nine production GTM systems at Gather AI, including a self-driving outbound orchestrator, a call intelligence pipeline, and a portal that holds 40+ live reports. I build the same stack for Series B teams. Run the diagnostic to scope this for your team."
     },
     {
      "q": "GTM engineer vs RevOps, what's the difference",
      "a": [
-      "RevOps configures the tools you buy. GTM engineering builds systems the tools don't come with.",
-      "A RevOps hire sets up HubSpot scoring, builds some reports, configures your routing. They work inside the tools. A GTM engineer pulls data out of Gong through an undocumented API endpoint, classifies 1,139 rep questions across 318 calls, finds that 90.8% of buyer pains went unprobed, and ships the finding as an interactive HTML report to a searchable portal, all automated, running unattended.",
-      "The skillset difference: RevOps knows tools. GTM engineering knows APIs, data modeling, automation, multi-agent orchestration, and how to ship to non-engineers. It's the difference between someone who can operate a car and someone who can build the engine.",
-      "The cost difference: a RevOps hire is $90K base plus ramp time. A GTM engineering engagement is $45-65K and 60 days, with systems you own forever."
+      "RevOps owns the strategy and the stack. GTM engineering builds the systems on RevOps' roadmap that never get built because there's no engineering bandwidth.",
+      "Your RevOps team already knows what needs to exist: a lead scoring model from closed-won data, an enrichment pipeline, a way to surface call intelligence. What they usually don't have is the time or the engineering skillset to build it, because their week is consumed keeping the current stack running and unblocking reps.",
+      "That's the gap. A GTM engineer is the specialist RevOps brings in to build those systems, pull data out of Gong through an undocumented API, classify 1,139 rep questions across 318 calls, and ship the finding as a searchable report, automated and running unattended.",
+      "The practical difference: RevOps keeps the machine running and plans what's next. I build what's next so RevOps doesn't have to stop running the machine. Most Series B teams need both and can't afford both full-time."
      ],
-     "cta": "I sit on the engineering side of this line. I don't configure tools. I extract intelligence from them, connect them together, and ship the result to where reps actually work. DM me \"difference\" if you're trying to decide which one you need."
+     "cta": "I build the systems on RevOps' roadmap. I pull the intelligence out of the tools, connect them together, and ship the result to where reps actually work. Run the diagnostic to scope this for your team."
     },
     {
      "q": "Should I hire a GTM engineer or a RevOps person",
      "a": [
       "It depends on the problem.",
       "If you need someone to manage HubSpot, build reports, run your CRM, hire RevOps. That's ongoing operations work.",
-      "If your reps are spending 2-3 hours a day on manual research, you're paying $40K for intent data that doesn't tell you who to call, your pipeline prioritization is vibes, your sales and marketing teams argue about lead quality with no shared data, and you need systems built that will run unattended for years, that's GTM engineering. It's a 60-day project, not a hire.",
+      "If your reps are spending 2-3 hours a day on manual research, you're paying for intent data that doesn't tell you who to call, your pipeline prioritization is vibes, your sales and marketing teams argue about lead quality with no shared data, and you need systems built that will run unattended for years, that's GTM engineering. It's a 60-day project, not a hire.",
       "The economics: RevOps is $90K/year recurring. GTM engineering is $45-65K one-time with systems you own. If the problem is \"we need someone running the CRM day to day,\" hire RevOps. If the problem is \"our stack is disconnected and our reps are guessing,\" bring in a GTM engineer to build the intelligence layer, then decide if you need someone to maintain it."
      ],
-     "cta": "I build the systems. What you do with them after is up to you. DM me \"hire\" and I'll help you think through which one makes sense."
+     "cta": "I build the systems. What you do with them after is up to you. Run the diagnostic to scope this for your team."
     },
     {
      "q": "What tools does a GTM engineer use",
@@ -196,7 +196,7 @@
       "The real GTM engineering stack is: CRM (Salesforce or HubSpot) for ground truth on deals and accounts. Conversation intelligence (Gong or Chorus) for what's actually happening on calls. Enrichment APIs (Apollo, Clay) for contact data at scale. A scripting language (Python) for automation and API archaeology, the undocumented endpoints, the rate-limit handling, the batch processing. A portal or distribution layer (Next.js, Vercel) to ship everything to where reps actually work. And increasingly: multi-agent AI orchestration for research, scoring, and content generation.",
       "The tool matters less than how you wire them together. Most teams have all five categories of tools. Almost none have them connected. A GTM engineer connects them so a call signal in Gong feeds the account score in the CRM, which triggers a Slack notification, which the rep acts on before lunch. The connection IS the product."
      ],
-     "cta": "I build on whatever stack the team already has. No new tools needed. DM me \"stack\" for the architecture pattern."
+     "cta": "I build on whatever stack the team already has. No new tools needed. Run the diagnostic to scope this for your team."
     },
     {
      "q": "How much does a GTM engineer cost, salary vs consultant",
@@ -204,9 +204,9 @@
       "Full-time hire: $120-180K base, plus benefits, plus 3-6 months of ramp before they produce anything meaningful. First-year cost is $150-225K, and that's if you hire the right person. The market is tiny, most \"GTM engineers\" are RevOps people with a new title.",
       "Consulting engagement (what I do): $25-85K depending on scope, delivered in 30-90 days, on tools you already own. You keep everything. No ramp. No benefits. No hiring risk. The systems run unattended after I leave.",
       "Tiered: $25K for the enrichment pipeline only (AI finds accounts, researches buying party, writes plans). $45K for Pipeline Engine Lite (scoring + enrichment + Slack delivery). $65K for the full engine (adds closed-won autopsy, in-market signals, portal). $85K for the full stack (adds Gong intelligence, facilities whitespace mapping, SDR enablement).",
-      "For a Series B spending $40K/year on intent data alone, the $45K engagement pays for itself in 14 months on the intent data savings, before you count the pipeline improvement."
+      "For a Series B with six reps, the $45K engagement recovers 30 minutes per rep per day. That's three hours a day returned to selling, roughly $30K a year, before you count a single deal that stops slipping."
      ],
-     "cta": "I'm $45K and 60 days. The alternative is $150K and 6 months of hoping. DM me \"cost\" and I'll send the full pricing breakdown."
+     "cta": "I'm $45K and 60 days. The alternative is $150K and 6 months of hoping. Run the diagnostic to scope this for your team."
     },
     {
      "q": "What should a GTM engineering stack look like",
@@ -216,7 +216,7 @@
       "The architecture principle: separate enrichment from scoring from routing. If you swap enrichment providers, scoring shouldn't break. If you retune weights, routing shouldn't break. Each layer is independent. They connect through interfaces, not through being the same tool.",
       "Most GTM stacks are Layer 1 only, a pile of tools, each with its own UI, each requiring a rep to log in and dig. A real stack adds Layers 2-4 on top of what's already there. The rep never logs into the tools. The intelligence comes to them."
      ],
-     "cta": "I design and build all four layers on whatever stack the team already has. DM me \"layers\" for the architecture diagram."
+     "cta": "I design and build all four layers on whatever stack the team already has. Run the diagnostic to scope this for your team."
     },
     {
      "q": "GTM engineering career path",
@@ -226,7 +226,7 @@
       "The career branches: stay an IC and become the person who builds the intelligence layer at a Series B/C company (demand is exploding, supply is near zero). Go consulting and build systems for multiple companies. Found a GTM engineering practice or agency. The common thread: you stop being the person who configures tools and become the person who designs systems.",
       "The ceiling is high because the need is real and the skillset is rare, half engineer, half marketer, plus AI orchestration. Most people pick one. The value is at the intersection."
      ],
-     "cta": "I'm on the consulting path. I built 9 production systems at Gather AI and now I build the same stack for Series B teams. DM me \"career\" if you're trying to figure out your own path."
+     "cta": "I'm on the consulting path. I built 9 production systems at Gather AI and now I build the same stack for Series B teams. Run the diagnostic to scope this for your team."
     },
     {
      "q": "How to break into GTM engineering",
@@ -236,7 +236,7 @@
       "The portfolio piece from steps 1-4 is what gets you hired. Not a certification. Not a course completion. A real system you can walk someone through: \"I built a pipeline that finds ICP accounts, identifies the buying party, enriches contacts, and delivers a pre-call brief to Slack. Here's how it works.\"",
       "The biggest mistake: learning tools before learning systems. Anyone can follow a Clay tutorial. Very few people can design a pipeline that handles failure gracefully, recovers from zero results, and ships to a place where reps actually consume it. Build systems, not Clay tables."
      ],
-     "cta": "I break into this conversation from the other side, I built systems first, then people started calling it \"GTM engineering.\" DM me \"break-in\" and I'll tell you what I'd build if I were starting today."
+     "cta": "I break into this conversation from the other side, I built systems first, then people started calling it \"GTM engineering.\" Run the diagnostic to scope this for your team."
     },
     {
      "q": "What skills does a GTM engineer need",
@@ -249,7 +249,7 @@
       "5. Shipping to non-engineers. Analysis that lives in a notebook is invisible. You need a portal with search. A Slack bot that delivers briefs. A one-command publish pipeline. The last mile is what separates a project from a product.",
       "6. AI-native cost engineering. Using LLMs as infrastructure, not as a chatbot. Multi-agent research replacing intent data contracts. AI-generated content from real research. The skill is knowing what AI can replace and what it can't."
      ],
-     "cta": "I use all six in every Pipeline Engine engagement. DM me \"skills\" for a deeper breakdown of each."
+     "cta": "I use all six in every Pipeline Engine engagement. Run the diagnostic to scope this for your team."
     },
     {
      "q": "Is GTM engineering just Clay and cold email",
@@ -258,7 +258,7 @@
       "Clay is a data enrichment tool. Cold email is a channel. Both are useful. Neither is the whole job. If your GTM engineering stops at \"I built a Clay table that sends cold emails,\" you're a power user, not an engineer.",
       "Real GTM engineering connects five systems: CRM (ground truth), conversation intelligence (what's happening on calls), enrichment (contact data), scoring (which accounts matter), and distribution (where reps consume the output). Clay might appear in the enrichment layer. Cold email might be one output channel. But the value is in the integration, the call signal that feeds the score, the score that triggers the enrichment, the enrichment that generates the brief, the brief that lands in Slack."
      ],
-     "cta": "I've built systems that mine 300+ Gong calls for competitive intel, score accounts on Fit+Signal with automated verdicts, enrich 309 accounts across 5 verticals, and ship everything to a searchable portal, all running unattended. Zero of that is \"Clay and cold email.\" DM me \"real\" and I'll show you what the full stack looks like."
+     "cta": "I've built systems that mine 300+ Gong calls for competitive intel, score accounts on Fit+Signal with automated verdicts, enrich 309 accounts across 5 verticals, and ship everything to a searchable portal, all running unattended. Zero of that is \"Clay and cold email.\" Run the diagnostic to scope this for your team."
     },
     {
      "q": "What separates a good GTM engineer from a tool configurator",
@@ -266,21 +266,19 @@
       "A tool configurator sets up HubSpot workflows. A GTM engineer builds a lead scoring model from 78 closed-won deals, connects it to an enrichment waterfall, outputs to a Slack bot, and ships a searchable portal so SDRs can find the reports without asking anyone.",
       "A tool configurator follows the docs. A GTM engineer reads the error when the docs are wrong. (Gong's transcript endpoint: docs say GET, reality says POST with a body. Apollo: two deprecated search routes. Only the third one works.)",
       "A tool configurator hands off a configured tool. A GTM engineer hands off a running system, with state tracking, failure recovery, and a Slack message every morning that tells the rep what to do.",
-      "A tool configurator builds what you ask for. A GTM engineer builds what you need and tells you what you should stop paying for. (That $40K intent contract? Replaceable with $100/month of tokens. Most configurators won't notice because they're inside the tools, not above them.)"
+      "A tool configurator builds what you ask for. A GTM engineer builds what you need and tells you what you should stop paying for. (The redundant tools and licenses you're still paying for. Most configurators won't notice because they're inside the tools, not above them.)"
      ],
-     "cta": "The line: one builds inside the box. One builds the box that connects all the other boxes. DM me \"configurator\" to see examples of the difference."
+     "cta": "The line: one builds inside the box. One builds the box that connects all the other boxes. Run the diagnostic to scope this for your team."
     },
     {
      "q": "How to measure GTM engineering ROI",
      "a": [
-      "Four lines on a spreadsheet.",
-      "Line 1: Vendor costs eliminated. Intent data you stop paying for. Tool seats you consolidate. Research services you cancel. At Gather AI, one line was $40K/year, replaced with a ~$100/month multi-agent system. That's $38,800 saved in year one. Before any pipeline improvement.",
-      "Line 2: Rep time recovered. If 6 reps each save 30 minutes a day on research, that's 3 hours/day returned to selling. At $80K loaded cost per rep, that's $30K/year in recovered selling time. Conservative.",
-      "Line 3: Pipeline predictability. Hardest to measure, most impactful. When accounts are scored and queued instead of picked by feel, pipeline coverage stabilizes. Weekly output becomes predictable. Forecast accuracy improves. If this moves the quarter by even one deal, the engagement paid for itself.",
-      "Line 4: Systems that compound. Every deal that closes feeds back into the scoring model. Every call analyzed improves the coaching priorities. Every account researched adds to the knowledge base. The system gets smarter with use. This is the line that makes year two cheaper than year one.",
-      "Total for a typical Series B: $40K saved on tools + $30K in recovered rep time = $70K in year one. A $45K engagement pays for itself in 8 months on efficiency alone. The pipeline improvement is upside."
+      "Line 1: Pipeline predictability. Hardest to measure, most impactful. When accounts are scored and queued instead of picked by feel, pipeline coverage stabilizes. Weekly output becomes predictable. Forecast accuracy improves. If this moves the quarter by even one deal, the engagement paid for itself.",
+      "Line 2: Rep time recovered. If 6 reps each save 30 minutes a day on research, that's 3 hours a day returned to selling. At $80K loaded cost per rep, that's $30K/year in recovered selling time. Conservative.",
+      "Line 3: Systems that compound. Every deal that closes feeds back into the scoring model. Every call analyzed improves coaching. The system gets smarter with use. Year two is cheaper than year one.",
+      "Total for a typical Series B: one extra deal pays for the engagement outright. The $30K/year in recovered rep time is the floor, not the ceiling."
      ],
-     "cta": "DM me \"ROI\" and I'll send you the calculator."
+     "cta": "Run the diagnostic to scope this for your team."
     }
    ]
   }
