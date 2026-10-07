@@ -6,7 +6,6 @@
 
 - [Home](https://xsingletary.com/): what he builds, named proof, the three-step engagement, and the guarantee.
 - [FAQ](https://xsingletary.com/faq): 27 direct answers on account scoring, lead scoring from closed-won data, replacing intent data, call analysis, ICP models, and what a GTM engineer actually does.
-- [Diagnostic](https://xsingletary.com/diagnostic): scope a build.
 
 ## Core claims
 
