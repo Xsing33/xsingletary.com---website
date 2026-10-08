@@ -5,7 +5,7 @@ import Nav from "@/components/Nav";
 import CtaFooter from "@/components/CtaFooter";
 import { BOOKING_URL } from "@/lib/links";
 
-type Item = { q: string; a: string[]; cta: string };
+type Item = { q: string; a: string[]; cta: string; id: string };
 type Tier = { name: string; items: Item[] };
 
 function load(): Tier[] {
@@ -57,7 +57,7 @@ export default function FaqPage() {
           <section className="faq-tier" key={tier.name}>
             <h2 className="faq-tier-h">{tier.name}</h2>
             {tier.items.map((item) => (
-              <details className="faq-item" key={item.q}>
+              <details className="faq-item" key={item.q} id={item.id}>
                 <summary className="faq-q">{item.q}</summary>
                 <div className="faq-body">
                   {item.a.map((p, i) => (
