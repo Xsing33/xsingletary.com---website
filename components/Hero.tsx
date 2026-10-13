@@ -18,7 +18,7 @@ export default function Hero() {
               See what I'd build for you
             </a>
             <a href="#problem" className="btn-secondary">
-              See what buyers actually say
+              What buyers actually say
             </a>
           </div>
         </div>
