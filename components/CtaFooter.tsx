@@ -10,7 +10,7 @@ export default function CtaFooter() {
             If your reps don&apos;t tell me it saves them 30 minutes a day in the first week,
             you don&apos;t pay the final invoice. You keep the ICP report regardless.
           </p>
-          <a href={BOOKING_URL} className="btn-primary" target="_blank" rel="noopener noreferrer">
+          <a href={BOOKING_URL} className="btn-primary" data-cta-location="footer" target="_blank" rel="noopener noreferrer">
             See what I'd build for you
           </a>
           <p className="lm-cta-micro">
