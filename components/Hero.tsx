@@ -14,7 +14,7 @@ export default function Hero() {
             message, and hands it to your rep every morning. On your stack, not a new tool.
           </p>
           <div className="hero-actions hero-in" style={{ ["--d" as string]: "0.24s" }} id="lead-magnet">
-            <a href={BOOKING_URL} className="btn-primary" target="_blank" rel="noopener noreferrer">
+            <a href={BOOKING_URL} className="btn-primary" data-cta-location="hero" target="_blank" rel="noopener noreferrer">
               See what I'd build for you
             </a>
             <a href="#problem" className="btn-secondary">

@@ -58,6 +58,7 @@ export default function MobileMenu({
           <a
             href={bookingUrl}
             className="btn-primary nav-panel-cta"
+            data-cta-location="mobile_nav"
             target="_blank"
             rel="noopener noreferrer"
           >

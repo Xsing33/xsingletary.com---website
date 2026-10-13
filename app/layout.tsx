@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import LeadTracking from "@/components/LeadTracking";
 import "./globals.css";
 
 const SITE = "https://xsingletary.com";
@@ -103,6 +104,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <div className="grid-bg"></div>
         <div className="scanlines"></div>
         <div className="vignette"></div>
+        <LeadTracking />
         {children}
       </body>
     </html>

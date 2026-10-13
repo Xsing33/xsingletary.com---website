@@ -24,7 +24,7 @@ export default function Nav() {
             </Link>
           ))}
         </div>
-        <a href={BOOKING_URL} className="nav-cta" target="_blank" rel="noopener noreferrer">
+        <a href={BOOKING_URL} className="nav-cta" data-cta-location="nav" target="_blank" rel="noopener noreferrer">
           Book the diagnostic
         </a>
         <MobileMenu links={NAV_LINKS} bookingUrl={BOOKING_URL} />
