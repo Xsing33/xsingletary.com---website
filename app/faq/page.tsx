@@ -1,11 +1,18 @@
 import fs from "fs";
 import path from "path";
+import Link from "next/link";
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import CtaFooter from "@/components/CtaFooter";
 import { BOOKING_URL } from "@/lib/links";
 
-type Item = { q: string; a: string[]; cta: string; id: string };
+type Item = {
+  q: string;
+  a: string[];
+  cta: string;
+  id: string;
+  links?: { label: string; href: string }[];
+};
 type Tier = { name: string; items: Item[] };
 
 function load(): Tier[] {
@@ -65,6 +72,19 @@ export default function FaqPage() {
                       {p}
                     </p>
                   ))}
+                  {item.links && item.links.length > 0 && (
+                    <div className="faq-links">
+                      {item.links.map((link) => (
+                        <Link
+                          className="faq-link"
+                          href={link.href}
+                          key={link.href}
+                        >
+                          {link.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
                   {item.cta && (
                     <a
                       className="faq-cta"

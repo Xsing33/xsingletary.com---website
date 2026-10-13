@@ -37,6 +37,12 @@ export async function GET() {
   const entries = [
     url(`${BASE}/`, today, "weekly", "1.0"),
     url(`${BASE}/faq`, today, "monthly", "0.9"),
+    url(`${BASE}/what-is-gtm-engineering`, today, "weekly", "0.9"),
+    url(`${BASE}/gtm-engineer-vs-revops`, today, "monthly", "0.9"),
+    url(`${BASE}/gtm-engineering-cost`, today, "monthly", "0.9"),
+    url(`${BASE}/call-intelligence`, today, "monthly", "0.7"),
+    url(`${BASE}/account-scoring`, today, "monthly", "0.7"),
+    url(`${BASE}/intent-data-replacement`, today, "monthly", "0.7"),
     ...posts.map((p) =>
       url(`${BASE}/blog/${p.slug}`, p.date || today, "monthly", "0.7")
     ),

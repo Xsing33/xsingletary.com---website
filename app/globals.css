@@ -487,6 +487,15 @@ footer{ border-top:1px solid var(--line); padding:32px 0; font-size:14.5px; colo
   color:var(--text); font-size:15.5px; line-height:1.6;
   border-left:3px solid var(--cyan); padding-left:16px; margin-top:18px;
 }
+.faq-main .faq-links{
+  display:flex; flex-direction:column; gap:6px; margin-top:16px;
+}
+.faq-main .faq-link{
+  align-self:flex-start; color:var(--cyan); font-size:15.5px; line-height:1.6;
+  border-bottom:1px solid var(--line-bright); padding-bottom:2px;
+}
+.faq-main .faq-link::after{ content:" \2192"; }
+.faq-main .faq-link:hover{ color:var(--text); border-color:var(--text-dim); }
 .faq-foot{
   margin-top:64px; padding:32px; border:1px solid var(--line); border-radius:12px;
   background:var(--bg-panel-raised); display:flex; align-items:center;

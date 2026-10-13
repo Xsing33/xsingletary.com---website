@@ -12,7 +12,8 @@
       "When I built the In-Market Confidence Score at Gather AI, the model scored on Fit + Engagement + Trigger Events + Evaluation Signals. The reps stopped guessing."
      ],
      "cta": "I build account scoring systems for Series B teams. Run the diagnostic to scope this for your team.",
-     "id": "score-accounts-for-outbound-prioritization"
+     "id": "score-accounts-for-outbound-prioritization",
+     "links": [{ "label": "How does account scoring work in practice?", "href": "/account-scoring" }]
     },
     {
      "q": "How to build a lead scoring model from closed-won data",
@@ -24,7 +25,8 @@
       "When I built the ICP model at Gather AI from 78 closed-won deals, the data said things nobody expected, like ~50% of wins coming from logistics/3PL when the team thought manufacturing was bigger. The data wins every argument."
      ],
      "cta": "I build evidence-based scoring models for Series B teams. Run the diagnostic to scope this for your team.",
-     "id": "build-a-lead-scoring-model"
+     "id": "build-a-lead-scoring-model",
+     "links": [{ "label": "How does account scoring work in practice?", "href": "/account-scoring" }]
     },
     {
      "q": "How to replace intent data with internal signals",
@@ -35,7 +37,8 @@
       "At Gather AI, I built a multi-agent research system that scanned hiring surges, expansion news, earnings language, and competitive mentions. The signals were better because they were specific to warehouse/inventory operations, something a generic intent vendor would never catch."
      ],
      "cta": "I build intent replacement systems for Series B teams. Run the diagnostic to scope this for your team.",
-     "id": "replace-intent-data-with-internal"
+     "id": "replace-intent-data-with-internal",
+     "links": [{ "label": "How do you replace intent data with your own signals?", "href": "/intent-data-replacement" }]
     },
     {
      "q": "How to analyze sales calls at scale",
@@ -46,7 +49,8 @@
       "This isn't about blaming reps. It's about knowing what to coach. If 90% of missed opportunities are in discovery questioning, you don't need a new script, you need discovery training. The data tells you exactly where to focus."
      ],
      "cta": "I build call intelligence pipelines that extract these patterns and ship them as interactive reports. Run the diagnostic to scope this for your team.",
-     "id": "analyze-sales-calls-at-scale"
+     "id": "analyze-sales-calls-at-scale",
+     "links": [{ "label": "How do you turn calls into pipeline signal?", "href": "/call-intelligence" }]
     },
     {
      "q": "How to build an ICP from real CRM data",
@@ -58,7 +62,8 @@
       "At Gather AI, the closed-won autopsy of 78 deals revealed that ~50% of wins were logistics/3PL, VP Operations and COO dominated, and the deal sweet spot was $100-250K with a multi-site land-and-expand pattern. Tribal knowledge said manufacturing was bigger. The data said otherwise."
      ],
      "cta": "I run ICP autopsies for Series B teams as Phase 1 of the Pipeline Engine. Run the diagnostic to scope this for your team.",
-     "id": "build-an-icp-from-real-crm-data"
+     "id": "build-an-icp-from-real-crm-data",
+     "links": [{ "label": "How does account scoring work in practice?", "href": "/account-scoring" }]
     },
     {
      "q": "How to automate account research for SDRs",
@@ -183,7 +188,8 @@
       "The relationship to RevOps: RevOps owns the roadmap and keeps the stack healthy. A GTM engineer is the specialist RevOps brings in to build the systems on that roadmap, like a lead scoring engine with weights derived from 78 closed-won deals, connected to an enrichment waterfall and shipped to a Slack bot. RevOps knows what needs to be built. I build it so they don't have to stop running the business to write code."
      ],
      "cta": "I've built nine production GTM systems at Gather AI, including a self-driving outbound orchestrator, a call intelligence pipeline, and a portal that holds 40+ live reports. I build the same stack for Series B teams. Run the diagnostic to scope this for your team.",
-     "id": "gtm-engineer-and-what-do"
+     "id": "gtm-engineer-and-what-do",
+     "links": [{ "label": "What does the work look like end to end?", "href": "/what-is-gtm-engineering" }]
     },
     {
      "q": "GTM engineer vs RevOps, what's the difference",
@@ -194,7 +200,8 @@
       "The practical difference: RevOps keeps the machine running and plans what's next. I build what's next so RevOps doesn't have to stop running the machine. Most Series B teams need both and can't afford both full-time."
      ],
      "cta": "I build the systems on RevOps' roadmap. I pull the intelligence out of the tools, connect them together, and ship the result to where reps actually work. Run the diagnostic to scope this for your team.",
-     "id": "gtm-engineer-vs-revops-whats"
+     "id": "gtm-engineer-vs-revops-whats",
+     "links": [{ "label": "How do GTM engineering and RevOps divide the work?", "href": "/gtm-engineer-vs-revops" }]
     },
     {
      "q": "Should I hire a GTM engineer or a RevOps person",
@@ -205,7 +212,8 @@
       "The economics: RevOps is $90K/year recurring. GTM engineering is $45-65K one-time with systems you own. If the problem is \"we need someone running the CRM day to day,\" hire RevOps. If the problem is \"our stack is disconnected and our reps are guessing,\" bring in a GTM engineer to build the intelligence layer, then decide if you need someone to maintain it."
      ],
      "cta": "I build the systems. What you do with them after is up to you. Run the diagnostic to scope this for your team.",
-     "id": "hire-a-gtm-engineer-or-a-revops-person"
+     "id": "hire-a-gtm-engineer-or-a-revops-person",
+     "links": [{ "label": "How do GTM engineering and RevOps divide the work?", "href": "/gtm-engineer-vs-revops" }]
     },
     {
      "q": "What tools does a GTM engineer use",
@@ -226,7 +234,8 @@
       "For a Series B with six reps, the $45K engagement recovers 30 minutes per rep per day. That's three hours a day returned to selling, roughly $30K a year, before you count a single deal that stops slipping."
      ],
      "cta": "I'm $45K and 60 days. The alternative is $150K and 6 months of hoping. Run the diagnostic to scope this for your team.",
-     "id": "gtm-engineer-cost-salary-vs-consultant"
+     "id": "gtm-engineer-cost-salary-vs-consultant",
+     "links": [{ "label": "What does a GTM engineering build actually cost?", "href": "/gtm-engineering-cost" }]
     },
     {
      "q": "What should a GTM engineering stack look like",
@@ -283,7 +292,8 @@
       "Real GTM engineering connects five systems: CRM (ground truth), conversation intelligence (what's happening on calls), enrichment (contact data), scoring (which accounts matter), and distribution (where reps consume the output). Clay might appear in the enrichment layer. Cold email might be one output channel. But the value is in the integration, the call signal that feeds the score, the score that triggers the enrichment, the enrichment that generates the brief, the brief that lands in Slack."
      ],
      "cta": "I've built systems that mine 300+ Gong calls for competitive intel, score accounts on Fit+Signal with automated verdicts, enrich 309 accounts across 5 verticals, and ship everything to a searchable portal, all running unattended. Zero of that is \"Clay and cold email.\" Run the diagnostic to scope this for your team.",
-     "id": "engineering-just-clay-and-cold-email"
+     "id": "engineering-just-clay-and-cold-email",
+     "links": [{ "label": "What does the work look like end to end?", "href": "/what-is-gtm-engineering" }]
     },
     {
      "q": "What separates a good GTM engineer from a tool configurator",
@@ -294,7 +304,8 @@
       "A tool configurator builds what you ask for. A GTM engineer builds what you need and tells you what you should stop paying for. (The redundant tools and licenses you're still paying for. Most configurators won't notice because they're inside the tools, not above them.)"
      ],
      "cta": "The line: one builds inside the box. One builds the box that connects all the other boxes. Run the diagnostic to scope this for your team.",
-     "id": "good-gtm-engineer-from-a"
+     "id": "good-gtm-engineer-from-a",
+     "links": [{ "label": "What does the work look like end to end?", "href": "/what-is-gtm-engineering" }]
     },
     {
      "q": "How to measure GTM engineering ROI",
@@ -305,7 +316,8 @@
       "Total for a typical Series B: one extra deal pays for the engagement outright. The $30K/year in recovered rep time is the floor, not the ceiling."
      ],
      "cta": "Run the diagnostic to scope this for your team.",
-     "id": "measure-gtm-engineering-roi"
+     "id": "measure-gtm-engineering-roi",
+     "links": [{ "label": "What does a GTM engineering build actually cost?", "href": "/gtm-engineering-cost" }]
     }
    ]
   }

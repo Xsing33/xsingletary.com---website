@@ -6,6 +6,12 @@
 
 - [Home](https://xsingletary.com/): what he builds, named proof, the three-step engagement, and the guarantee.
 - [FAQ](https://xsingletary.com/faq): 27 direct answers on account scoring, lead scoring from closed-won data, replacing intent data, call analysis, ICP models, and what a GTM engineer actually does.
+- [What is GTM engineering](https://xsingletary.com/what-is-gtm-engineering): the plain definition, what the work involves, and how it differs from a tool admin or a data engineer.
+- [GTM engineer vs RevOps](https://xsingletary.com/gtm-engineer-vs-revops): which role solves which problem, and how to tell which one your team is missing.
+- [GTM engineering cost](https://xsingletary.com/gtm-engineering-cost): what drives the price of a build, what a finished system leaves behind, and salary vs consultant.
+- [Call intelligence](https://xsingletary.com/call-intelligence): how to turn call recordings into structured signal like named pains, objections, and competitor mentions.
+- [Account scoring](https://xsingletary.com/account-scoring): how Fit and Signal scoring from closed-won data tells reps which account to work and why.
+- [Intent data replacement](https://xsingletary.com/intent-data-replacement): how to replace paid intent data with public signals you can own and score yourself.
 
 ## Core claims
 
