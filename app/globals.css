@@ -282,6 +282,8 @@ section{ padding:100px 0; }
 .receipt{ background:var(--bg-panel); padding:24px 28px; display:flex; align-items:baseline; justify-content:space-between; gap:20px; }
 .receipt-stat{ font-family:'Space Grotesk', sans-serif; font-size:24px; font-weight:600; white-space:nowrap; }
 .receipt-source{ font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--text-faint); text-align:right; }
+/* proof surfaced high on the homepage, just below the hero */
+.receipts-strip{ margin-top:36px; padding-bottom:8px; }
 
 /* ---------- PLAN (connector strip, reused pattern) ---------- */
 .connector{
