@@ -9,8 +9,8 @@
   </defs>
   <rect x="0" y="0" width="512" height="512" rx="112" fill="#0B0F16"/>
   <rect x="0" y="0" width="512" height="512" rx="112" fill="none" stroke="#212B38" stroke-width="4"/>
-  <g stroke="url(#xFill)" stroke-linecap="butt" stroke-width="92">
-    <line x1="136" y1="136" x2="376" y2="376"/>
-    <line x1="376" y1="136" x2="136" y2="376"/>
+  <g stroke="url(#xFill)" stroke-linecap="butt" stroke-width="100">
+    <line x1="120" y1="120" x2="392" y2="392"/>
+    <line x1="392" y1="120" x2="120" y2="392"/>
   </g>
 </svg>
