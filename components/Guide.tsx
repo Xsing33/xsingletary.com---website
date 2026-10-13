@@ -1,3 +1,5 @@
+import ReceiptsStrip from "./ReceiptsStrip";
+
 export default function Guide() {
   return (
     <section id="guide">
@@ -16,32 +18,7 @@ export default function Guide() {
             <p>Now I build the same kind of systems for Series B/C GTM teams living the same problem.</p>
           </div>
 
-          <div className="receipts reveal">
-            <div className="receipt">
-              <div className="receipt-stat">90.8%</div>
-              <div className="receipt-source">
-                of buyer pains went unprobed
-                <br />
-                GONG CALL INTELLIGENCE
-              </div>
-            </div>
-            <div className="receipt">
-              <div className="receipt-stat">11,000 / 93.9%</div>
-              <div className="receipt-source">
-                accounts enriched, verified
-                <br />
-                ACCOUNT-TO-OUTBOUND PIPELINE
-              </div>
-            </div>
-            <div className="receipt">
-              <div className="receipt-stat">Live</div>
-              <div className="receipt-source">
-                in daily use by AEs
-                <br />
-                APOLLO PIPELINE ORCHESTRATOR
-              </div>
-            </div>
-          </div>
+          <ReceiptsStrip className="reveal" />
         </div>
       </div>
     </section>

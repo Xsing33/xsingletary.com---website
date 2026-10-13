@@ -1,5 +1,6 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
+import ReceiptsStrip from "@/components/ReceiptsStrip";
 import CostGrid from "@/components/CostGrid";
 import ProofGrid from "@/components/ProofGrid";
 import PainList from "@/components/PainList";
@@ -16,6 +17,9 @@ export default function Home() {
       <ScrollFx />
       <Nav />
       <Hero />
+      <div className="wrap receipts-strip">
+        <ReceiptsStrip className="reveal" />
+      </div>
       <CostGrid />
       <ProofGrid />
       <PainList />
