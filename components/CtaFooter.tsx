@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BOOKING_URL } from "@/lib/links";
 
 export default function CtaFooter() {
@@ -12,6 +13,10 @@ export default function CtaFooter() {
           <a href={BOOKING_URL} className="btn-primary" target="_blank" rel="noopener noreferrer">
             Run the diagnostic
           </a>
+          <p className="lm-cta-micro">
+            Not ready to book?{" "}
+            <Link href="/gtm-audit">Start with a free outside-in read</Link>.
+          </p>
         </div>
       </section>
 

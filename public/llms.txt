@@ -12,6 +12,7 @@
 - [Call intelligence](https://xsingletary.com/call-intelligence): how to turn call recordings into structured signal like named pains, objections, and competitor mentions.
 - [Account scoring](https://xsingletary.com/account-scoring): how Fit and Signal scoring from closed-won data tells reps which account to work and why.
 - [Intent data replacement](https://xsingletary.com/intent-data-replacement): how to replace paid intent data with public signals you can own and score yourself.
+- [Free outside-in read](https://xsingletary.com/gtm-audit): a free review of public signals only, no stack access needed, before any paid engagement.
 
 ## Core claims
 

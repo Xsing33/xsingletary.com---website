@@ -43,6 +43,7 @@ export async function GET() {
     url(`${BASE}/call-intelligence`, today, "monthly", "0.7"),
     url(`${BASE}/account-scoring`, today, "monthly", "0.7"),
     url(`${BASE}/intent-data-replacement`, today, "monthly", "0.7"),
+    url(`${BASE}/gtm-audit`, today, "monthly", "0.8"),
     ...posts.map((p) =>
       url(`${BASE}/blog/${p.slug}`, p.date || today, "monthly", "0.7")
     ),
