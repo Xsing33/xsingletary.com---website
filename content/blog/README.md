@@ -22,7 +22,7 @@ but are public and indexed.
 5. Every problem-aware post must include a free win.
 6. Include HTML semantic elements (h2, p, ul, strong) for screen readers and
    AI extraction. The blog renders HTML directly.
-7. CTA must be "Run the diagnostic" -> booking link.
+7. CTA must be "See what I'd build for you" -> booking link.
 8. Quality gate before publish:
    - [ ] Title is an insight, not a self-claim
    - [ ] Free win is concrete and copy-paste-able (if problem-aware)

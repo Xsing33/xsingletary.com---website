@@ -215,7 +215,7 @@ export default function IntentDataReplacementPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Run the diagnostic
+                See what I'd build for you
               </a>
             </div>
           </section>
@@ -241,7 +241,7 @@ export default function IntentDataReplacementPage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Run the diagnostic
+            See what I'd build for you
           </a>
         </div>
       </main>

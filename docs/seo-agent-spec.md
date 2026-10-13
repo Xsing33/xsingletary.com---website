@@ -69,7 +69,7 @@ Pattern matches existing lead-magnet system but public and indexed.
     "canonical": "/blog/why-reps-guess-who-to-call"
   },
   "cta": {
-    "label": "Run the diagnostic",
+    "label": "See what I'd build for you",
     "url": "https://calendar.app.google/uEChwoVqcWCW9otf9"
   }
 }

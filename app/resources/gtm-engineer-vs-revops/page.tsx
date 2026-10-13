@@ -230,7 +230,7 @@ export default function GtmEngineerVsRevops() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Run the diagnostic
+            See what I'd build for you
           </a>
         </div>
       </main>

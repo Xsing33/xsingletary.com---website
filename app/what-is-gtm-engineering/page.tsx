@@ -130,7 +130,7 @@ export default function WhatIsGtmEngineeringPage() {
 
         <div className="lm-cta-row">
           <a className="btn-primary" href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
-            Run the diagnostic
+            See what I'd build for you
           </a>
         </div>
 
@@ -216,7 +216,7 @@ export default function WhatIsGtmEngineeringPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Run the diagnostic
+              See what I'd build for you
             </a>
           </div>
         </section>

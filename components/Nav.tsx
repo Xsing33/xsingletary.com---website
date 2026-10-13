@@ -16,7 +16,7 @@ export default function Nav() {
           <Link href="/faq">FAQ</Link>
         </div>
         <a href={BOOKING_URL} className="nav-cta" target="_blank" rel="noopener noreferrer">
-          Run the diagnostic
+          Book the diagnostic
         </a>
       </div>
     </nav>

@@ -11,7 +11,7 @@ export default function CtaFooter() {
             you don&apos;t pay the final invoice. You keep the ICP report regardless.
           </p>
           <a href={BOOKING_URL} className="btn-primary" target="_blank" rel="noopener noreferrer">
-            Run the diagnostic
+            See what I'd build for you
           </a>
           <p className="lm-cta-micro">
             Not ready to book?{" "}
