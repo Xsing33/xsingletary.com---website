@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaFooter from "@/components/CtaFooter";
 import { BOOKING_URL } from "@/lib/links";
 
@@ -70,22 +71,22 @@ const LIVE = [
 
 const LINKS: SiteLink[] = [
   {
-    href: "/gtm-engineer-vs-revops",
+    href: "/resources/gtm-engineer-vs-revops",
     label: "GTM engineer vs RevOps",
     d: "Which role you actually need.",
   },
   {
-    href: "/account-scoring",
+    href: "/resources/account-scoring",
     label: "Account scoring",
     d: "How the 0-100 score is built.",
   },
   {
-    href: "/intent-data-replacement",
+    href: "/resources/intent-data-replacement",
     label: "Replacing intent data",
     d: "Signals from your own data.",
   },
   {
-    href: "/call-intelligence",
+    href: "/resources/call-intelligence",
     label: "Call intelligence",
     d: "Turning calls into pipeline.",
   },
@@ -101,7 +102,7 @@ export const metadata: Metadata = {
   description:
     "GTM engineering cost is set by scope, not a list price. What you pay for, what moves the number, and what a finished system leaves behind, with the proof behind it.",
   alternates: {
-    canonical: "https://xsingletary.com/gtm-engineering-cost",
+    canonical: "https://xsingletary.com/resources/gtm-engineering-cost",
   },
 };
 
@@ -114,8 +115,14 @@ export default function GtmEngineeringCost() {
       {
         "@type": "ListItem",
         position: 2,
+        name: "Resources",
+        item: "https://xsingletary.com/resources",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
         name: "GTM engineering cost",
-        item: "https://xsingletary.com/gtm-engineering-cost",
+        item: "https://xsingletary.com/resources/gtm-engineering-cost",
       },
     ],
   };
@@ -126,7 +133,7 @@ export default function GtmEngineeringCost() {
     name: "What GTM engineering costs, and what drives it",
     description:
       "What GTM engineering costs, what drives the number, and what a finished system leaves behind.",
-    url: "https://xsingletary.com/gtm-engineering-cost",
+    url: "https://xsingletary.com/resources/gtm-engineering-cost",
     isPartOf: { "@type": "WebSite", name: "Xavier Singletary", url: "https://xsingletary.com" },
   };
 
@@ -142,6 +149,7 @@ export default function GtmEngineeringCost() {
       />
       <Nav />
       <main className="wrap lm-main">
+        <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Resources", href: "/resources" }, { name: "GTM engineering cost" }]} />
         <div className="lm-eyebrow mono">{EYEBROW}</div>
         <div className="lm-rule" />
         <h1 className="lm-h1">{H1}</h1>

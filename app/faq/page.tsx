@@ -3,6 +3,7 @@ import path from "path";
 import Link from "next/link";
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaFooter from "@/components/CtaFooter";
 import { BOOKING_URL } from "@/lib/links";
 
@@ -49,8 +50,22 @@ export default function FaqPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://xsingletary.com" },
+              { "@type": "ListItem", position: 2, name: "FAQ", item: "https://xsingletary.com/faq" },
+            ],
+          }),
+        }}
+      />
       <Nav />
       <main className="wrap faq-main">
+        <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "FAQ" }]} />
         <div className="faq-eyebrow mono">GTM ENGINEERING · ANSWERS</div>
         <div className="lm-rule" />
         <h1 className="faq-h1">GTM engineering, answered.</h1>

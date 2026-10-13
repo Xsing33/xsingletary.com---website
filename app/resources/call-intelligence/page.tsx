@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaFooter from "@/components/CtaFooter";
 import { BOOKING_URL } from "@/lib/links";
 
@@ -67,8 +68,8 @@ const PROOF: { nums: Num[]; cap: string } = {
 };
 
 const RELATED: RelatedLink[] = [
-  { href: "/intent-data-replacement", label: "Replacing intent data" },
-  { href: "/account-scoring", label: "Account scoring" },
+  { href: "/resources/intent-data-replacement", label: "Replacing intent data" },
+  { href: "/resources/account-scoring", label: "Account scoring" },
   { href: "/what-is-gtm-engineering", label: "What is GTM engineering?" },
   { href: "/faq", label: "GTM engineering FAQ" },
 ];
@@ -77,7 +78,7 @@ export const metadata: Metadata = {
   title: "Call intelligence: turn calls into pipeline",
   description:
     "Call intelligence turns discovery recordings into structured signal your reps can act on. 90.8% of buyer pains went unprobed across 318 analyzed calls. How to catch them and route them to the deal.",
-  alternates: { canonical: "https://xsingletary.com/call-intelligence" },
+  alternates: { canonical: "https://xsingletary.com/resources/call-intelligence" },
 };
 
 export default function CallIntelligencePage() {
@@ -87,7 +88,7 @@ export default function CallIntelligencePage() {
     name: "Call intelligence",
     serviceType: "GTM engineering",
     description: metadata.description,
-    url: "https://xsingletary.com/call-intelligence",
+    url: "https://xsingletary.com/resources/call-intelligence",
     provider: {
       "@type": "Person",
       name: "Xavier Singletary",
@@ -100,7 +101,8 @@ export default function CallIntelligencePage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: "https://xsingletary.com" },
-      { "@type": "ListItem", position: 2, name: "Call intelligence", item: "https://xsingletary.com/call-intelligence" },
+      { "@type": "ListItem", position: 2, name: "Resources", item: "https://xsingletary.com/resources" },
+      { "@type": "ListItem", position: 3, name: "Call intelligence", item: "https://xsingletary.com/resources/call-intelligence" },
     ],
   };
 
@@ -116,6 +118,7 @@ export default function CallIntelligencePage() {
       />
       <Nav />
       <main className="wrap lm-main">
+        <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Resources", href: "/resources" }, { name: "Call intelligence" }]} />
         <div className="lm-eyebrow">{CONTENT.eyebrow}</div>
         <div className="lm-rule" />
         <h1 className="lm-h1">{CONTENT.h1}</h1>
@@ -183,11 +186,11 @@ export default function CallIntelligencePage() {
           <p className="lm-intro">
             Call signal is strongest when it feeds the rest of the system. The pains you hear
             in calls sharpen who you target and how you score them.{" "}
-            <Link href="/account-scoring" style={{ borderBottom: "1px solid var(--line-bright)" }}>
+            <Link href="/resources/account-scoring" style={{ borderBottom: "1px solid var(--line-bright)" }}>
               See how scoring works
             </Link>
             , or read how it replaces paid intent data.{" "}
-            <Link href="/intent-data-replacement" style={{ borderBottom: "1px solid var(--line-bright)" }}>
+            <Link href="/resources/intent-data-replacement" style={{ borderBottom: "1px solid var(--line-bright)" }}>
               Replacing intent data
             </Link>
             .

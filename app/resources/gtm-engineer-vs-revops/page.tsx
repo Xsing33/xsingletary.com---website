@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaFooter from "@/components/CtaFooter";
 import { BOOKING_URL } from "@/lib/links";
 
@@ -83,7 +84,7 @@ const LINKS: SiteLink[] = [
     d: "The role, in plain terms.",
   },
   {
-    href: "/gtm-engineering-cost",
+    href: "/resources/gtm-engineering-cost",
     label: "What GTM engineering costs",
     d: "How the number gets set.",
   },
@@ -104,7 +105,7 @@ export const metadata: Metadata = {
   description:
     "GTM engineer vs RevOps, explained plainly. RevOps keeps the engine running. A GTM engineer builds the scoring, enrichment, and call intelligence layer that feeds it.",
   alternates: {
-    canonical: "https://xsingletary.com/gtm-engineer-vs-revops",
+    canonical: "https://xsingletary.com/resources/gtm-engineer-vs-revops",
   },
 };
 
@@ -117,8 +118,14 @@ export default function GtmEngineerVsRevops() {
       {
         "@type": "ListItem",
         position: 2,
+        name: "Resources",
+        item: "https://xsingletary.com/resources",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
         name: "GTM engineer vs RevOps",
-        item: "https://xsingletary.com/gtm-engineer-vs-revops",
+        item: "https://xsingletary.com/resources/gtm-engineer-vs-revops",
       },
     ],
   };
@@ -129,7 +136,7 @@ export default function GtmEngineerVsRevops() {
     name: "GTM engineer vs RevOps",
     description:
       "The difference between a GTM engineer and RevOps, and how to tell which one your team is missing.",
-    url: "https://xsingletary.com/gtm-engineer-vs-revops",
+    url: "https://xsingletary.com/resources/gtm-engineer-vs-revops",
     isPartOf: { "@type": "WebSite", name: "Xavier Singletary", url: "https://xsingletary.com" },
   };
 
@@ -145,6 +152,7 @@ export default function GtmEngineerVsRevops() {
       />
       <Nav />
       <main className="wrap lm-main">
+        <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Resources", href: "/resources" }, { name: "GTM engineer vs RevOps" }]} />
         <div className="lm-eyebrow mono">{EYEBROW}</div>
         <div className="lm-rule" />
         <h1 className="lm-h1">{H1}</h1>

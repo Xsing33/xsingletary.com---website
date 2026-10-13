@@ -344,6 +344,26 @@ section{ padding:100px 0; }
 }
 .resource-card h3{ font-size:17px; line-height:1.35; }
 .resource-card p{ color:var(--text-dim); font-size:14.5px; line-height:1.55; }
+.breadcrumbs{ margin-bottom:26px; }
+.breadcrumbs ol{
+  list-style:none;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:8px;
+}
+.breadcrumbs li{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-family:'IBM Plex Mono', monospace;
+  font-size:12.5px;
+  line-height:1.4;
+}
+.breadcrumbs a{ color:var(--text-dim); text-decoration:none; transition:color 0.2s ease; }
+.breadcrumbs a:hover{ color:var(--cyan); }
+.breadcrumbs [aria-current]{ color:var(--text-faint); }
+.crumb-sep{ color:var(--line-bright); }
 
 
 /* ---------- PLAN (connector strip, reused pattern) ---------- */

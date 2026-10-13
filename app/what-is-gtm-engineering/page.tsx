@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaFooter from "@/components/CtaFooter";
 import { BOOKING_URL } from "@/lib/links";
 
@@ -71,11 +72,11 @@ const PROOF: { nums: Num[]; cap: string } = {
 
 const RELATED: RelatedLink[] = [
   { href: "/faq", label: "GTM engineering FAQ" },
-  { href: "/gtm-engineer-vs-revops", label: "GTM engineer vs RevOps" },
-  { href: "/gtm-engineering-cost", label: "What it costs" },
-  { href: "/call-intelligence", label: "Call intelligence" },
-  { href: "/account-scoring", label: "Account scoring" },
-  { href: "/intent-data-replacement", label: "Replacing intent data" },
+  { href: "/resources/gtm-engineer-vs-revops", label: "GTM engineer vs RevOps" },
+  { href: "/resources/gtm-engineering-cost", label: "What it costs" },
+  { href: "/resources/call-intelligence", label: "Call intelligence" },
+  { href: "/resources/account-scoring", label: "Account scoring" },
+  { href: "/resources/intent-data-replacement", label: "Replacing intent data" },
 ];
 
 export const metadata: Metadata = {
@@ -121,6 +122,7 @@ export default function WhatIsGtmEngineeringPage() {
       />
       <Nav />
       <main className="wrap lm-main">
+        <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "What is GTM engineering?" }]} />
         <div className="lm-eyebrow">{CONTENT.eyebrow}</div>
         <div className="lm-rule" />
         <h1 className="lm-h1">{CONTENT.h1}</h1>
@@ -168,7 +170,7 @@ export default function WhatIsGtmEngineeringPage() {
           <p className="lm-intro" style={{ marginTop: 20 }}>
             The lines blur on small teams, and that is fine. The useful question is not the
             title. It is whether someone owns the path from raw data to the next call.{" "}
-            <Link href="/gtm-engineer-vs-revops" style={{ borderBottom: "1px solid var(--line-bright)" }}>
+            <Link href="/resources/gtm-engineer-vs-revops" style={{ borderBottom: "1px solid var(--line-bright)" }}>
               See the full comparison
             </Link>
             .
@@ -194,7 +196,7 @@ export default function WhatIsGtmEngineeringPage() {
           <p className="lm-intro">
             A GTM system is built on the tools you already pay for, over a few weeks, not a
             year. I break the cost down plainly, including what you can skip.{" "}
-            <Link href="/gtm-engineering-cost" style={{ borderBottom: "1px solid var(--line-bright)" }}>
+            <Link href="/resources/gtm-engineering-cost" style={{ borderBottom: "1px solid var(--line-bright)" }}>
               Read the cost breakdown
             </Link>
             .

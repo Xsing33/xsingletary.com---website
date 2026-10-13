@@ -7,6 +7,17 @@ import type { NextConfig } from "next";
 const DESK = process.env.DESK_URL ?? "https://desk-production-3594.up.railway.app";
 
 const nextConfig: NextConfig = {
+
+  async redirects() {
+    return [
+      { source: "/gtm-engineer-vs-revops", destination: "/resources/gtm-engineer-vs-revops", permanent: true },
+      { source: "/gtm-engineering-cost", destination: "/resources/gtm-engineering-cost", permanent: true },
+      { source: "/call-intelligence", destination: "/resources/call-intelligence", permanent: true },
+      { source: "/account-scoring", destination: "/resources/account-scoring", permanent: true },
+      { source: "/intent-data-replacement", destination: "/resources/intent-data-replacement", permanent: true },
+    ];
+  },
+
   async rewrites() {
     return [
       // the page itself

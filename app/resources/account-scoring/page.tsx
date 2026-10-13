@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaFooter from "@/components/CtaFooter";
 import { BOOKING_URL } from "@/lib/links";
 
 const SITE = "https://xsingletary.com";
-const CANONICAL = `${SITE}/account-scoring`;
+const CANONICAL = `${SITE}/resources/account-scoring`;
 
 type Card = { t: string; d: string };
 type Section = { h: string; paras: string[]; cards?: Card[] };
@@ -82,12 +83,12 @@ const related: PageLink[] = [
   {
     t: "Replace paid intent data",
     d: "Trade the vendor list for signals you own.",
-    href: "/intent-data-replacement",
+    href: "/resources/intent-data-replacement",
   },
   {
     t: "Call intelligence",
     d: "Turn call transcripts into patterns you can act on.",
-    href: "/call-intelligence",
+    href: "/resources/call-intelligence",
   },
   {
     t: "What GTM engineering is",
@@ -109,7 +110,8 @@ export default function AccountScoringPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: SITE },
-      { "@type": "ListItem", position: 2, name: "Account scoring", item: CANONICAL },
+      { "@type": "ListItem", position: 2, name: "Resources", item: "https://xsingletary.com/resources" },
+      { "@type": "ListItem", position: 3, name: "Account scoring", item: CANONICAL },
     ],
   };
 
@@ -148,6 +150,7 @@ export default function AccountScoringPage() {
       />
       <Nav />
       <main className="wrap lm-main">
+        <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Resources", href: "/resources" }, { name: "Account scoring" }]} />
         <div className="lm-eyebrow mono">{eyebrow}</div>
         <div className="lm-rule" />
         <h1 className="lm-h1">{h1}</h1>

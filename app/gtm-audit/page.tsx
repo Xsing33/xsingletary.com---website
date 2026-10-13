@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaFooter from "@/components/CtaFooter";
 import { BOOKING_URL } from "@/lib/links";
 
@@ -67,10 +68,10 @@ const PROOF: { nums: Num[]; cap: string } = {
 };
 
 const RELATED: RelatedLink[] = [
-  { href: "/call-intelligence", label: "Call intelligence" },
-  { href: "/account-scoring", label: "Account scoring" },
-  { href: "/intent-data-replacement", label: "Replacing intent data" },
-  { href: "/gtm-engineering-cost", label: "What it costs" },
+  { href: "/resources/call-intelligence", label: "Call intelligence" },
+  { href: "/resources/account-scoring", label: "Account scoring" },
+  { href: "/resources/intent-data-replacement", label: "Replacing intent data" },
+  { href: "/resources/gtm-engineering-cost", label: "What it costs" },
   { href: "/what-is-gtm-engineering", label: "What is GTM engineering?" },
 ];
 
@@ -117,6 +118,7 @@ export default function GtmAuditPage() {
       />
       <Nav />
       <main className="wrap lm-main">
+        <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Free outside-in GTM audit" }]} />
         <div className="lm-eyebrow">{CONTENT.eyebrow}</div>
         <div className="lm-rule" />
         <h1 className="lm-h1">{CONTENT.h1}</h1>

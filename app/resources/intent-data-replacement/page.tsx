@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaFooter from "@/components/CtaFooter";
 import { BOOKING_URL } from "@/lib/links";
 
 const SITE = "https://xsingletary.com";
-const CANONICAL = `${SITE}/intent-data-replacement`;
+const CANONICAL = `${SITE}/resources/intent-data-replacement`;
 
 type Card = { t: string; d: string };
 type Section = { h: string; paras: string[]; cards?: Card[] };
@@ -86,17 +87,17 @@ const related: PageLink[] = [
   {
     t: "Account scoring",
     d: "Fit and Signal scoring built from your closed-won data.",
-    href: "/account-scoring",
+    href: "/resources/account-scoring",
   },
   {
     t: "Call intelligence",
     d: "Mine calls for the pain and the competitors you keep losing to.",
-    href: "/call-intelligence",
+    href: "/resources/call-intelligence",
   },
   {
     t: "What GTM engineering costs",
     d: "What an engagement runs, and what you own after it ends.",
-    href: "/gtm-engineering-cost",
+    href: "/resources/gtm-engineering-cost",
   },
 ];
 
@@ -116,6 +117,12 @@ export default function IntentDataReplacementPage() {
       {
         "@type": "ListItem",
         position: 2,
+        name: "Resources",
+        item: "https://xsingletary.com/resources",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
         name: "Intent data replacement",
         item: CANONICAL,
       },
@@ -157,6 +164,7 @@ export default function IntentDataReplacementPage() {
       />
       <Nav />
       <main className="wrap lm-main">
+        <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Resources", href: "/resources" }, { name: "Intent data replacement" }]} />
         <div className="lm-eyebrow mono">{eyebrow}</div>
         <div className="lm-rule" />
         <h1 className="lm-h1">{h1}</h1>

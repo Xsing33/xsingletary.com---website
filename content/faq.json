@@ -13,7 +13,7 @@
      ],
      "cta": "I build account scoring systems for Series B teams. Run the diagnostic to scope this for your team.",
      "id": "score-accounts-for-outbound-prioritization",
-     "links": [{ "label": "How does account scoring work in practice?", "href": "/account-scoring" }]
+     "links": [{ "label": "How does account scoring work in practice?", "href": "/resources/account-scoring" }]
     },
     {
      "q": "How to build a lead scoring model from closed-won data",
@@ -26,7 +26,7 @@
      ],
      "cta": "I build evidence-based scoring models for Series B teams. Run the diagnostic to scope this for your team.",
      "id": "build-a-lead-scoring-model",
-     "links": [{ "label": "How does account scoring work in practice?", "href": "/account-scoring" }]
+     "links": [{ "label": "How does account scoring work in practice?", "href": "/resources/account-scoring" }]
     },
     {
      "q": "How to replace intent data with internal signals",
@@ -38,7 +38,7 @@
      ],
      "cta": "I build intent replacement systems for Series B teams. Run the diagnostic to scope this for your team.",
      "id": "replace-intent-data-with-internal",
-     "links": [{ "label": "How do you replace intent data with your own signals?", "href": "/intent-data-replacement" }]
+     "links": [{ "label": "How do you replace intent data with your own signals?", "href": "/resources/intent-data-replacement" }]
     },
     {
      "q": "How to analyze sales calls at scale",
@@ -50,7 +50,7 @@
      ],
      "cta": "I build call intelligence pipelines that extract these patterns and ship them as interactive reports. Run the diagnostic to scope this for your team.",
      "id": "analyze-sales-calls-at-scale",
-     "links": [{ "label": "How do you turn calls into pipeline signal?", "href": "/call-intelligence" }]
+     "links": [{ "label": "How do you turn calls into pipeline signal?", "href": "/resources/call-intelligence" }]
     },
     {
      "q": "How to build an ICP from real CRM data",
@@ -63,7 +63,7 @@
      ],
      "cta": "I run ICP autopsies for Series B teams as Phase 1 of the Pipeline Engine. Run the diagnostic to scope this for your team.",
      "id": "build-an-icp-from-real-crm-data",
-     "links": [{ "label": "How does account scoring work in practice?", "href": "/account-scoring" }]
+     "links": [{ "label": "How does account scoring work in practice?", "href": "/resources/account-scoring" }]
     },
     {
      "q": "How to automate account research for SDRs",
@@ -201,7 +201,7 @@
      ],
      "cta": "I build the systems on RevOps' roadmap. I pull the intelligence out of the tools, connect them together, and ship the result to where reps actually work. Run the diagnostic to scope this for your team.",
      "id": "gtm-engineer-vs-revops-whats",
-     "links": [{ "label": "How do GTM engineering and RevOps divide the work?", "href": "/gtm-engineer-vs-revops" }]
+     "links": [{ "label": "How do GTM engineering and RevOps divide the work?", "href": "/resources/gtm-engineer-vs-revops" }]
     },
     {
      "q": "Should I hire a GTM engineer or a RevOps person",
@@ -213,7 +213,7 @@
      ],
      "cta": "I build the systems. What you do with them after is up to you. Run the diagnostic to scope this for your team.",
      "id": "hire-a-gtm-engineer-or-a-revops-person",
-     "links": [{ "label": "How do GTM engineering and RevOps divide the work?", "href": "/gtm-engineer-vs-revops" }]
+     "links": [{ "label": "How do GTM engineering and RevOps divide the work?", "href": "/resources/gtm-engineer-vs-revops" }]
     },
     {
      "q": "What tools does a GTM engineer use",
@@ -235,7 +235,7 @@
      ],
      "cta": "I'm $45K and 60 days. The alternative is $150K and 6 months of hoping. Run the diagnostic to scope this for your team.",
      "id": "gtm-engineer-cost-salary-vs-consultant",
-     "links": [{ "label": "What does a GTM engineering build actually cost?", "href": "/gtm-engineering-cost" }]
+     "links": [{ "label": "What does a GTM engineering build actually cost?", "href": "/resources/gtm-engineering-cost" }]
     },
     {
      "q": "What should a GTM engineering stack look like",
@@ -317,7 +317,7 @@
      ],
      "cta": "Run the diagnostic to scope this for your team.",
      "id": "measure-gtm-engineering-roi",
-     "links": [{ "label": "What does a GTM engineering build actually cost?", "href": "/gtm-engineering-cost" }]
+     "links": [{ "label": "What does a GTM engineering build actually cost?", "href": "/resources/gtm-engineering-cost" }]
     }
    ]
   }
