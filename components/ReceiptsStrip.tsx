@@ -21,11 +21,11 @@ export default function ReceiptsStrip({ className }: { className?: string }) {
         </div>
       </div>
       <div className="receipt">
-        <div className="receipt-stat">Live</div>
+        <div className="receipt-stat">9</div>
         <div className="receipt-source">
-          in daily use by AEs
+          production systems shipped
           <br />
-          APOLLO PIPELINE ORCHESTRATOR
+          BUILT AT GATHER AI
         </div>
       </div>
     </div>

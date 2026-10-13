@@ -283,8 +283,68 @@ section{ padding:100px 0; }
 .receipt-stat{ font-family:'Space Grotesk', sans-serif; font-size:24px; font-weight:600; white-space:nowrap; }
 .receipt-source{ font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--text-faint); text-align:right; }
 /* proof surfaced high on the homepage, just below the hero */
-.receipts-strip{ margin-top:36px; padding-bottom:8px; }
 .cta-block .lm-cta-micro{ margin:18px auto 0; }
+/* ---------- STAT BAND (above the fold) ---------- */
+.stat-band{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:1px;
+  background:var(--line);
+  border:1px solid var(--line);
+  margin-top:48px;
+}
+.stat-band-item{
+  background:var(--bg-panel);
+  padding:22px 24px;
+  display:flex;
+  flex-direction:column;
+  gap:7px;
+}
+.sb-stat{
+  font-family:'Space Grotesk', sans-serif;
+  font-size:28px;
+  font-weight:600;
+  line-height:1;
+}
+.sb-label{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:12.5px;
+  color:var(--text-faint);
+  line-height:1.5;
+}
+
+/* ---------- RESOURCES ---------- */
+.resource-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:1px;
+  background:var(--line);
+  border:1px solid var(--line);
+}
+.resource-card{
+  background:var(--bg-panel);
+  padding:28px 28px 26px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  text-decoration:none;
+  color:inherit;
+  transition:background 0.2s ease;
+}
+.resource-card:hover{ background:var(--bg-panel-raised); }
+.resource-card:focus-visible{
+  outline:2px solid var(--cyan);
+  outline-offset:-2px;
+}
+.resource-kicker{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:11.5px;
+  letter-spacing:0.08em;
+  color:var(--cyan);
+}
+.resource-card h3{ font-size:17px; line-height:1.35; }
+.resource-card p{ color:var(--text-dim); font-size:14.5px; line-height:1.55; }
+
 
 /* ---------- PLAN (connector strip, reused pattern) ---------- */
 .connector{
@@ -358,6 +418,8 @@ footer{ border-top:1px solid var(--line); padding:32px 0; font-size:14.5px; colo
 
 @media (max-width: 860px){
   .cost-grid{ grid-template-columns:1fr; }
+  .stat-band{ grid-template-columns:1fr; }
+  .resource-grid{ grid-template-columns:1fr; }
   .hero-grid{ grid-template-columns:1fr; }
   .instrument{ justify-self:start; margin-top:40px; max-width:280px; }
   h1.hero-headline{ font-size:32px; }

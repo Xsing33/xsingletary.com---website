@@ -12,6 +12,7 @@ export default function Nav() {
           <Link href="/#problem">Problem</Link>
           <Link href="/#proof">Proof</Link>
           <Link href="/what-is-gtm-engineering">GTM engineering</Link>
+          <Link href="/#resources">Guides</Link>
           <Link href="/faq">FAQ</Link>
         </div>
         <a href={BOOKING_URL} className="nav-cta" target="_blank" rel="noopener noreferrer">
