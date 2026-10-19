@@ -56,7 +56,15 @@ export default function Resources() {
 
         <div className="resource-grid">
           {PAGES.map((p) => (
-            <Link href={p.href} className="resource-card reveal" key={p.href}>
+            // The anchor wraps the whole card, so without an explicit label the
+            // delegated GA4 listener would read the kicker, heading and body as
+            // one string. data-cta-label keeps the report row readable.
+            <Link
+              href={p.href}
+              className="resource-card reveal"
+              key={p.href}
+              data-cta-label={p.title}
+            >
               <span className="resource-kicker">{p.kicker}</span>
               <h3>{p.title}</h3>
               <p>{p.body}</p>
