@@ -15,6 +15,34 @@ const nextConfig: NextConfig = {
       { source: "/call-intelligence", destination: "/resources/call-intelligence", permanent: true },
       { source: "/account-scoring", destination: "/resources/account-scoring", permanent: true },
       { source: "/intent-data-replacement", destination: "/resources/intent-data-replacement", permanent: true },
+
+      // Legacy URLs from the two earlier generations of this domain, both still
+      // indexed or linked in places. Without these every one of them 404s.
+      //
+      // Generation 1: WordPress site that lived at the apex until 2023.
+      { source: "/blog", destination: "/resources", permanent: true },
+      { source: "/feed", destination: "/resources", permanent: true },
+      { source: "/category/uncategorized", destination: "/resources", permanent: true },
+      { source: "/2019/05", destination: "/resources", permanent: true },
+      { source: "/hello-world", destination: "/", permanent: true },
+      { source: "/portfolio", destination: "/", permanent: true },
+      { source: "/seo", destination: "/resources", permanent: true },
+      { source: "/paid-search", destination: "/resources", permanent: true },
+      { source: "/website-development", destination: "/resources", permanent: true },
+      { source: "/digital-marketing-services", destination: "/resources", permanent: true },
+      { source: "/digital-marketing-career-coaching", destination: "/resources", permanent: true },
+      // The consulting service page is the one legacy URL that has a direct
+      // modern equivalent: the definitional pillar.
+      { source: "/digital-marketing-consulting", destination: "/what-is-gtm-engineering", permanent: true },
+
+      // Generation 2: single-page app that answered on www. www is no longer
+      // served by design, so these are dead on the www host, but the apex
+      // forms still catch old bookmarks, typed URLs and normalized links.
+      { source: "/contact", destination: "/gtm-audit", permanent: true },
+      { source: "/services", destination: "/resources", permanent: true },
+      { source: "/services/:path*", destination: "/resources", permanent: true },
+      { source: "/projects", destination: "/", permanent: true },
+      { source: "/about", destination: "/", permanent: true },
     ];
   },
 
