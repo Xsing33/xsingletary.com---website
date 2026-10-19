@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import Nav from "@/components/Nav";
 import CtaFooter from "@/components/CtaFooter";
 
@@ -44,10 +45,11 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const post = loadPost(params.slug);
-  if (!post) return { title: "Not found" };
+  const { slug } = await params;
+  const post = loadPost(slug);
+  if (!post) notFound();
   return {
     title: post.seo.title,
     description: post.seo.description,
@@ -62,9 +64,14 @@ export async function generateMetadata({
   };
 }
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
-  const post = loadPost(params.slug);
-  if (!post) return <p>Not found.</p>;
+export default async function BlogPost({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const post = loadPost(slug);
+  if (!post) notFound();
 
   const articleJsonLd = {
     "@context": "https://schema.org",
