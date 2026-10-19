@@ -26,6 +26,7 @@ function resolveLocation(el: HTMLElement): string {
   if (el.closest(".nav-panel")) return "mobile_nav";
   if (el.closest("nav")) return "nav";
   if (el.closest(".hero")) return "hero";
+  if (el.closest(".resource-card")) return "resources";
   if (el.closest(".cta-block")) return "footer";
   return "inline";
 }
