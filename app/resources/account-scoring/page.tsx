@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -9,7 +10,7 @@ const SITE = "https://xsingletary.com";
 const CANONICAL = `${SITE}/resources/account-scoring`;
 
 type Card = { t: string; d: string };
-type Section = { h: string; paras: string[]; cards?: Card[] };
+type Section = { h: string; paras: ReactNode[]; cards?: Card[] };
 type Stat = { v: string; l: string };
 type PageLink = { t: string; d: string; href: string };
 
@@ -24,6 +25,17 @@ const sections: Section[] = [
     paras: [
       "Every morning your reps open the CRM and pick an account. The name they recognize. The one at the top of the list. The one that feels hot today.",
       "That is not prioritization. That is a hunch with a login. The real cost is not the couple of wasted calls. It is the accounts that match your ICP and never get worked, because nothing surfaced them.",
+      <>
+        Gut feel keeps winning only because nothing scored the accounts first, which
+        is{" "}
+        <Link
+          href="/blog/why-reps-guess-who-to-call"
+          style={{ borderBottom: "1px solid var(--line-bright)" }}
+        >
+          why reps guess who to call
+        </Link>{" "}
+        even when the data to rank them is already sitting in the CRM.
+      </>,
     ],
   },
   {
@@ -98,9 +110,9 @@ const related: PageLink[] = [
 ];
 
 export const metadata: Metadata = {
-  title: "Account scoring: Fit and Signal for outbound prioritization",
+  title: "Account scoring: Fit and Signal for outbound",
   description:
-    "How account scoring works: a two-axis Fit and Signal model built from closed-won data, with STRIKE, NURTURE, QUALIFY, and KILL verdicts, so reps know which account to work and why.",
+    "How account scoring works: a two-axis Fit and Signal model built from closed-won data, with STRIKE, NURTURE, QUALIFY and KILL verdicts for every account.",
   alternates: { canonical: CANONICAL },
 };
 

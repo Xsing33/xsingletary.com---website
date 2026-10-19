@@ -90,7 +90,7 @@ export default function ResourcesPage() {
         <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Resources" }]} />
         <div className="lm-eyebrow mono">RESOURCES</div>
         <div className="lm-rule" />
-        <h1 className="lm-h1">Go deeper on the details.</h1>
+        <h1 className="lm-h1">GTM engineering guides and resources</h1>
         <p className="faq-intro">{intro}</p>
 
         <div className="blog-body">
@@ -101,13 +101,17 @@ export default function ResourcesPage() {
               service, read this one first. Everything else assumes you already know.
             </p>
             <div className="lm-grid3">
-              <Link href="/what-is-gtm-engineering" className="lm-node">
-                <div className="t">What is GTM engineering</div>
+              <article className="lm-node card-stretch">
+                <div className="t">
+                  <Link href="/what-is-gtm-engineering" className="card-anchor">
+                    What is GTM engineering
+                  </Link>
+                </div>
                 <div className="d">
                   The plain definition, what the work involves, and how it differs
                   from a tool admin or a data engineer.
                 </div>
-              </Link>
+              </article>
             </div>
           </section>
 
@@ -115,10 +119,14 @@ export default function ResourcesPage() {
             <h2>THE GUIDES</h2>
             <div className="lm-grid3">
               {GUIDES.map((g) => (
-                <Link href={g.href} className="lm-node" key={g.href}>
-                  <div className="t">{g.title}</div>
+                <article className="lm-node card-stretch" key={g.href}>
+                  <div className="t">
+                    <Link href={g.href} className="card-anchor">
+                      {g.title}
+                    </Link>
+                  </div>
                   <div className="d">{g.body}</div>
-                </Link>
+                </article>
               ))}
             </div>
           </section>
@@ -130,13 +138,17 @@ export default function ResourcesPage() {
               you where the funnel leaks.
             </p>
             <div className="lm-grid3">
-              <Link href="/gtm-audit" className="lm-node">
-                <div className="t">Free outside-in read</div>
+              <article className="lm-node card-stretch">
+                <div className="t">
+                  <Link href="/gtm-audit" className="card-anchor">
+                    Free outside-in read
+                  </Link>
+                </div>
                 <div className="d">
                   A review of your public signals only. You keep the findings
                   whether or not we work together.
                 </div>
-              </Link>
+              </article>
             </div>
           </section>
         </div>

@@ -100,7 +100,7 @@ const LINKS: SiteLink[] = [
 export const metadata: Metadata = {
   title: "What GTM engineering costs, and what drives it",
   description:
-    "GTM engineering cost is set by scope, not a list price. What you pay for, what moves the number, and what a finished system leaves behind, with the proof behind it.",
+    "GTM engineering cost is set by scope, not a list price. What you pay for, what moves the number, and what a finished system leaves behind.",
   alternates: {
     canonical: "https://xsingletary.com/resources/gtm-engineering-cost",
   },
@@ -178,6 +178,31 @@ export default function GtmEngineeringCost() {
               </div>
             ))}
           </div>
+        </section>
+
+        <section className="lm-sec">
+          <h2>Salary versus consultant</h2>
+          <p>
+            A full-time hire is the usual alternative to a build. RevOps Report, reading 309 job
+            postings with disclosed pay, puts the median RevOps salary at $135,000 and the average
+            at $148,000. That is salary rather than loaded cost, and it is the year before anything
+            ships.
+          </p>
+          <p>
+            Scoped work has an end date. You keep the system, the documentation, and the retainer
+            after it is optional.
+          </p>
+          <p>
+            Source:{" "}
+            <a
+              href="https://therevopsreport.com/salaries/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ borderBottom: "1px solid var(--line-bright)" }}
+            >
+              RevOps Report salary benchmarks
+            </a>
+          </p>
         </section>
 
         <section className="lm-sec">

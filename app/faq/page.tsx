@@ -22,9 +22,9 @@ function load(): Tier[] {
 }
 
 export const metadata: Metadata = {
-  title: "GTM engineering FAQ: scoring, intent data, call analysis",
+  title: "GTM engineering FAQ: scoring, intent data, calls",
   description:
-    "Direct answers on GTM engineering: account scoring, lead scoring from closed-won data, replacing intent data, call analysis, ICP models, and what a GTM engineer actually does.",
+    "Direct answers on GTM engineering: account scoring, lead scoring from closed-won data, replacing intent data, call analysis, and what a GTM engineer does.",
   alternates: { canonical: "https://xsingletary.com/faq" },
 };
 
@@ -39,7 +39,10 @@ export default function FaqPage() {
       name: i.q,
       acceptedAnswer: {
         "@type": "Answer",
-        text: [...i.a, i.cta].filter(Boolean).join(" "),
+        text: [...i.a, i.cta]
+          .filter(Boolean)
+          .join(" ")
+          .replace(/<[^>]+>/g, ""),
       },
     })),
   };
@@ -82,11 +85,19 @@ export default function FaqPage() {
               <details className="faq-item" key={item.q} id={item.id}>
                 <summary className="faq-q">{item.q}</summary>
                 <div className="faq-body">
-                  {item.a.map((p, i) => (
-                    <p className="faq-a" key={i}>
-                      {p}
-                    </p>
-                  ))}
+                  {item.a.map((p, i) =>
+                    /<a\s/i.test(p) ? (
+                      <p
+                        className="faq-a"
+                        key={i}
+                        dangerouslySetInnerHTML={{ __html: p }}
+                      />
+                    ) : (
+                      <p className="faq-a" key={i}>
+                        {p}
+                      </p>
+                    )
+                  )}
                   {item.links && item.links.length > 0 && (
                     <div className="faq-links">
                       {item.links.map((link) => (

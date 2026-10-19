@@ -9,7 +9,7 @@ const SITE = "https://xsingletary.com";
 const CANONICAL = `${SITE}/resources/intent-data-replacement`;
 
 type Card = { t: string; d: string };
-type Section = { h: string; paras: string[]; cards?: Card[] };
+type Section = { h: string; paras: string[]; cards?: Card[]; source?: { t: string; href: string } };
 type Stat = { v: string; l: string };
 type PageLink = { t: string; d: string; href: string };
 
@@ -24,7 +24,12 @@ const sections: Section[] = [
     paras: [
       "Paid intent data answers one weak question. Is this company interested in something like what you sell?",
       "It does not name the person who owns the problem. It does not tell you what to say when you reach them. And the same signal lands with every competitor on the list on the same day.",
+      "The bill is real. Transaction data puts the median annual contract for 6sense near $62,000 and for Demandbase near $69,000, with observed deals running past $150,000.",
     ],
+    source: {
+      t: "Salesmotion, 6sense vs Demandbase pricing comparison",
+      href: "https://salesmotion.io/6sense-vs-demandbase",
+    },
   },
   {
     h: "THE SIGNALS YOU CAN OWN",
@@ -177,6 +182,19 @@ export default function IntentDataReplacementPage() {
               {s.paras.map((p, i) => (
                 <p key={i}>{p}</p>
               ))}
+              {s.source && (
+                <p>
+                  Source:{" "}
+                  <a
+                    href={s.source.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ borderBottom: "1px solid var(--line-bright)" }}
+                  >
+                    {s.source.t}
+                  </a>
+                </p>
+              )}
               {s.cards && (
                 <div className="lm-grid3">
                   {s.cards.map((c) => (

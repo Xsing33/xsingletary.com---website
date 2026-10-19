@@ -101,9 +101,9 @@ const LINKS: SiteLink[] = [
 ];
 
 export const metadata: Metadata = {
-  title: "GTM engineer vs RevOps: what is the difference",
+  title: "GTM engineer vs RevOps: the difference",
   description:
-    "GTM engineer vs RevOps, explained plainly. RevOps keeps the engine running. A GTM engineer builds the scoring, enrichment, and call intelligence layer that feeds it.",
+    "GTM engineer vs RevOps, explained plainly. RevOps keeps the engine running. A GTM engineer builds the scoring, enrichment and call intelligence layer.",
   alternates: {
     canonical: "https://xsingletary.com/resources/gtm-engineer-vs-revops",
   },

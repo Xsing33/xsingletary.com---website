@@ -20,7 +20,9 @@ const nextConfig: NextConfig = {
       // indexed or linked in places. Without these every one of them 404s.
       //
       // Generation 1: WordPress site that lived at the apex until 2023.
-      { source: "/blog", destination: "/resources", permanent: true },
+      // NOTE: /blog is deliberately NOT redirected. The WordPress-era /blog
+      // (a 2023 post index) is gone, and app/blog/page.tsx is now a real
+      // index. A redirect here shadows the live page and returns a 308.
       { source: "/feed", destination: "/resources", permanent: true },
       { source: "/category/uncategorized", destination: "/resources", permanent: true },
       { source: "/2019/05", destination: "/resources", permanent: true },
