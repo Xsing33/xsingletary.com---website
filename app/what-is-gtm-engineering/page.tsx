@@ -79,10 +79,42 @@ const RELATED: RelatedLink[] = [
   { href: "/resources/intent-data-replacement", label: "Replacing intent data" },
 ];
 
+// The long answers currently live only in the FAQ, which is the page least able
+// to rank for a head term. These three belong on the page that carries the
+// cluster, and each one links out to the guide that goes deeper.
+type Explainer = { h: string; ps: string[]; link: RelatedLink };
+
+const EXPLAINERS: Explainer[] = [
+  {
+    h: "The stack, in four layers",
+    ps: [
+      "Four layers, not five tools. Layer one is the data foundation: your CRM, your call recordings, your enrichment sources. Layer two is intelligence: scoring models, ICP definitions, signal detection. Layer three is automation: the pipelines that run unattended. Layer four is distribution: the portal, the Slack message, the pre call brief, wherever reps actually consume the output.",
+      "The architecture rule is to keep enrichment, scoring and routing separate. Swap the enrichment provider and scoring should not break. Retune the weights and routing should not break. Each layer connects through an interface rather than by being the same tool.",
+    ],
+    link: { href: "/resources/account-scoring", label: "How the scoring layer gets built" },
+  },
+  {
+    h: "What a GTM engineer is not",
+    ps: [
+      "It is not Clay and cold email, which is what a lot of the LinkedIn crowd sells, usually because they sell Clay courses. Clay is an enrichment tool. Cold email is a channel. Both are useful. Neither is the job.",
+      "It is also not a tool configurator. A configurator sets up HubSpot workflows. The engineering version builds a lead scoring model from your closed won deals, connects it to an enrichment waterfall, and ships the result somewhere your reps already look.",
+    ],
+    link: { href: "/resources/intent-data-replacement", label: "Signals you own instead of rented ones" },
+  },
+  {
+    h: "How to tell which one you need",
+    ps: [
+      "If the problem is that nobody administers the CRM, builds the reports, or keeps the records honest, you need sales ops or RevOps. That is ongoing operations work, and it does not stop.",
+      "If your reps spend their week researching accounts by hand, pick targets by feel, and still walk into calls not knowing what the buyer cares about, that is a systems problem. It has a build answer.",
+    ],
+    link: { href: "/resources/gtm-engineer-vs-revops", label: "Where the two roles divide" },
+  },
+];
+
 export const metadata: Metadata = {
   title: "What is GTM engineering? A plain answer",
   description:
-    "GTM engineering is the work of connecting your go to market tools so the data inside them reaches the people who sell. What it is, what a GTM engineer does, and where it sits next to sales ops and data engineering.",
+    "GTM engineering connects your go to market tools so the data inside them reaches the people who sell. What it is, and where it sits next to sales ops.",
   alternates: { canonical: "https://xsingletary.com/what-is-gtm-engineering" },
 };
 
@@ -176,6 +208,23 @@ export default function WhatIsGtmEngineeringPage() {
             .
           </p>
         </section>
+
+        {EXPLAINERS.map((e) => (
+          <section className="lm-sec" key={e.h}>
+            <h2>{e.h}</h2>
+            {e.ps.map((p, i) => (
+              <p className="lm-intro" key={i} style={{ marginBottom: 16 }}>
+                {p}
+              </p>
+            ))}
+            <p className="lm-intro">
+              <Link href={e.link.href} style={{ borderBottom: "1px solid var(--line-bright)" }}>
+                {e.link.label}
+              </Link>
+              .
+            </p>
+          </section>
+        ))}
 
         <section className="lm-sec">
           <h2>What it looks like in practice</h2>

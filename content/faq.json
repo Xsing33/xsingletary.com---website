@@ -31,7 +31,7 @@
     {
      "q": "How to replace intent data with internal signals",
      "a": [
-      "Intent data vendors charge $30-80K/year to tell you a company is \"showing intent.\" What they don't tell you: which contact to call, what to say, or why now. And the data is sold to your competitors too.",
+      "Intent data vendors charge $30-80K/year to tell you a company is \"showing intent.\" What they don't tell you: which contact to call, what to say, or why now. And the data is sold to your competitors too. Transaction data reported by <a href=\"https://salesmotion.io/6sense-vs-demandbase\" target=\"_blank\" rel=\"noopener noreferrer\">Salesmotion</a> puts the median annual contract for 6sense near $62,000 and for Demandbase near $69,000.",
       "You can manufacture better signals yourself. Set up monitoring for: hiring posts in ops/supply chain roles (especially ones 21+ days old, budgeted and unstaffed), earnings call mentions of inventory problems or labor shortages, facility expansion announcements, leadership changes in ops roles, and recent funding rounds. Each of these is a free, public signal that's often more timely than vendor intent data.",
       "Use a multi-agent AI layer to scan these sources, extract the signal, and score it against your ICP weights. The output is the same 0-100 score an intent vendor gives you, but it's tuned to your actual buyers, your actual verticals, and your actual closed-won patterns. And it costs ~$100/month in tokens instead of a five-figure contract.",
       "At Gather AI, I built a multi-agent research system that scanned hiring surges, expansion news, earnings language, and competitive mentions. The signals were better because they were specific to warehouse/inventory operations, something a generic intent vendor would never catch."
@@ -46,7 +46,7 @@
       "Individual call review is coaching. Bulk call analysis is intelligence. Most teams only do the first.",
       "Pull the transcripts via API (Gong, Chorus, whatever you use, be prepared for undocumented endpoints). Batch extract by date range. Classify every rep question by type: discovery, qualification, demo, pricing, objection handling. Classify every buyer response: pain stated, pain missed, competitor mentioned, timeline given, budget indicated. Now count.",
       "You'll find things that coaching one call at a time would never surface. One stat from a 318-call analysis at Gather AI: 90.8% of buyer pains raised went unprobed by reps. The rep heard the pain. They acknowledged it. They moved on. They never asked \"what happens if you don't fix this?\" or \"how much is this costing you?\" or \"who else feels this pain?\" Across 1,139 rep questions classified, the pattern was consistent.",
-      "This isn't about blaming reps. It's about knowing what to coach. If 90% of missed opportunities are in discovery questioning, you don't need a new script, you need discovery training. The data tells you exactly where to focus."
+      "This isn't about blaming reps. It's about knowing what to coach. If 90% of missed opportunities are in discovery questioning, you don't need a new script, you need discovery training. The data tells you exactly where to focus. It is also the habit behind <a href=\"/blog/why-reps-guess-who-to-call\" style=\"border-bottom:1px solid var(--line-bright)\">why reps guess who to call</a>, even when the answer was already on the call."
      ],
      "cta": "I build call intelligence pipelines that extract these patterns and ship them as interactive reports. Book the diagnostic to scope this for your team.",
      "id": "analyze-sales-calls-at-scale",
@@ -228,7 +228,7 @@
     {
      "q": "How much does a GTM engineer cost, salary vs consultant",
      "a": [
-      "Full-time hire: $120-180K base, plus benefits, plus 3-6 months of ramp before they produce anything meaningful. First-year cost is $150-225K, and that's if you hire the right person. The market is tiny, most \"GTM engineers\" are RevOps people with a new title.",
+      "Full-time hire: $120-180K base, plus benefits, plus 3-6 months of ramp before they produce anything meaningful. First-year cost is $150-225K, and that's if you hire the right person. The market is tiny, most \"GTM engineers\" are RevOps people with a new title. For reference, RevOps Report puts the median RevOps salary at $135,000 across 309 job postings with disclosed pay (<a href=\"https://therevopsreport.com/salaries/\" target=\"_blank\" rel=\"noopener noreferrer\">RevOps Report</a>).",
       "Consulting engagement (what I do): $25-85K depending on scope, delivered in 30-90 days, on tools you already own. You keep everything. No ramp. No benefits. No hiring risk. The systems run unattended after I leave.",
       "Tiered: $25K for the enrichment pipeline only (AI finds accounts, researches buying party, writes plans). $45K for Pipeline Engine Lite (scoring + enrichment + Slack delivery). $65K for the full engine (adds closed-won autopsy, in-market signals, portal). $85K for the full stack (adds Gong intelligence, facilities whitespace mapping, SDR enablement).",
       "For a Series B with six reps, the $45K engagement recovers 30 minutes per rep per day. That's three hours a day returned to selling, roughly $30K a year, before you count a single deal that stops slipping."

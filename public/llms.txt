@@ -7,6 +7,7 @@
 - [Home](https://xsingletary.com/): what he builds, named proof, the three-step engagement, and the guarantee.
 - [FAQ](https://xsingletary.com/faq): 27 direct answers on account scoring, lead scoring from closed-won data, replacing intent data, call analysis, ICP models, and what a GTM engineer actually does.
 - [Resources](https://xsingletary.com/resources): index of the GTM engineering guides, grouped by the question each one answers.
+- [Blog](https://xsingletary.com/blog): notes on outbound, account prioritization, and the systems that tell a rep who to work and why.
 - [What is GTM engineering](https://xsingletary.com/what-is-gtm-engineering): the plain definition, what the work involves, and how it differs from a tool admin or a data engineer.
 - [GTM engineer vs RevOps](https://xsingletary.com/resources/gtm-engineer-vs-revops): which role solves which problem, and how to tell which one your team is missing.
 - [GTM engineering cost](https://xsingletary.com/resources/gtm-engineering-cost): what drives the price of a build, what a finished system leaves behind, and salary vs consultant.

@@ -38,6 +38,7 @@ export async function GET() {
     url(`${BASE}/`, today, "weekly", "1.0"),
     url(`${BASE}/faq`, today, "monthly", "0.9"),
     url(`${BASE}/resources`, today, "weekly", "0.9"),
+    url(`${BASE}/blog`, today, "weekly", "0.8"),
     url(`${BASE}/what-is-gtm-engineering`, today, "weekly", "0.9"),
     url(`${BASE}/resources/gtm-engineer-vs-revops`, today, "monthly", "0.9"),
     url(`${BASE}/resources/gtm-engineering-cost`, today, "monthly", "0.9"),

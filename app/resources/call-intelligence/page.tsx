@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -14,14 +15,26 @@ type RelatedLink = { href: string; label: string };
 
 const CONTENT = {
   eyebrow: "CALL INTELLIGENCE",
-  h1: "Your calls already hold the answers.",
+  h1: "Call intelligence: turn call recordings into pipeline signal",
   intro:
     "Every discovery call is a record of what your buyer actually cares about. Call intelligence is the work of turning those recordings into structured signal your team can act on, instead of leaving it in a folder nobody opens.",
 } as const;
 
-const PROBLEM: string[] = [
+const PROBLEM: ReactNode[] = [
   "Here is the uncomfortable part. When I ran the numbers on 318 analyzed calls and 1,139 classified rep questions, 90.8% of buyer pains went unprobed.",
-  "A buyer says the current tool is too slow, or that a competitor promised a faster rollout, and the rep moves on to the next question. The signal is right there in the recording, and it never turns into a talking point, a follow up, or a deal risk your team can see.",
+  <>
+    A buyer says the current tool is too slow, or that a competitor promised a faster
+    rollout, and the rep moves on to the next question. That move, past the signal
+    instead of into it, is a habit worth naming:{" "}
+    <Link
+      href="/blog/why-reps-guess-who-to-call"
+      style={{ borderBottom: "1px solid var(--line-bright)" }}
+    >
+      why reps guess who to call
+    </Link>
+    . The signal is right there in the recording, and it never turns into a talking
+    point, a follow up, or a deal risk your team can see.
+  </>,
   "That is not a rep problem. It is a system problem. Nobody is pulling the pains out of the calls and putting them somewhere useful.",
 ];
 
@@ -75,9 +88,9 @@ const RELATED: RelatedLink[] = [
 ];
 
 export const metadata: Metadata = {
-  title: "Call intelligence: turn calls into pipeline",
+  title: "Call intelligence: turning calls into pipeline",
   description:
-    "Call intelligence turns discovery recordings into structured signal your reps can act on. 90.8% of buyer pains went unprobed across 318 analyzed calls. How to catch them and route them to the deal.",
+    "Call intelligence turns discovery calls into signal your reps can act on. 90.8% of buyer pains went unprobed across 318 analyzed calls. How to catch them.",
   alternates: { canonical: "https://xsingletary.com/resources/call-intelligence" },
 };
 

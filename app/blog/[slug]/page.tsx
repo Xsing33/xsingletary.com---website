@@ -3,6 +3,7 @@ import path from "path";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Nav from "@/components/Nav";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaFooter from "@/components/CtaFooter";
 
 interface Post {
@@ -58,8 +59,24 @@ export async function generateMetadata({
       title: post.seo.title,
       description: post.seo.description,
       type: "article",
+      url: post.seo.canonical,
+      siteName: "Xavier Singletary",
       publishedTime: post.date,
       authors: [post.author],
+      images: [
+        {
+          url: "/og.png",
+          width: 1200,
+          height: 630,
+          alt: "Xavier Singletary, GTM engineering systems for Series B/C sales teams",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.seo.title,
+      description: post.seo.description,
+      images: ["/og.png"],
     },
   };
 }
@@ -105,6 +122,13 @@ export default async function BlogPost({
       />
       <Nav />
       <main className="wrap lm-main">
+        <Breadcrumbs
+          items={[
+            { name: "Home", href: "/" },
+            { name: "Blog", href: "/blog" },
+            { name: post.title },
+          ]}
+        />
         <div className="lm-eyebrow">{post.eyebrow}</div>
         <div className="lm-rule" />
         <h1 className="lm-h1">{post.title}</h1>

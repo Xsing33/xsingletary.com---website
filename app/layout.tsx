@@ -11,7 +11,11 @@ const DESC =
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
   title: {
-    default: `${TAGLINE} | Xavier Singletary`,
+    // Homepage title carries no brand suffix: the informative part is what
+    // competes for space in a search result, and Google may drop a repeated
+    // site name anyway. Child pages that set their own title still get the
+    // template applied.
+    default: TAGLINE,
     template: "%s | Xavier Singletary",
   },
   description: DESC,
@@ -28,7 +32,7 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Xavier Singletary — GTM engineering systems for Series B/C sales teams",
+        alt: "Xavier Singletary, GTM engineering systems for Series B/C sales teams",
       },
     ],
   },

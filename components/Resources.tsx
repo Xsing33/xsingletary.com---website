@@ -43,6 +43,12 @@ const PAGES = [
     title: "Start with a free read",
     body: "An outside-in look at your public signals only. No stack access needed to start.",
   },
+  {
+    kicker: "FROM THE BLOG",
+    href: "/blog/why-reps-guess-who-to-call",
+    title: "Why reps guess who to call",
+    body: "Most outbound is lost before the first email, because the rep has no idea which account to work.",
+  },
 ] as const;
 
 export default function Resources() {
@@ -56,19 +62,23 @@ export default function Resources() {
 
         <div className="resource-grid">
           {PAGES.map((p) => (
-            // The anchor wraps the whole card, so without an explicit label the
-            // delegated GA4 listener would read the kicker, heading and body as
-            // one string. data-cta-label keeps the report row readable.
-            <Link
-              href={p.href}
-              className="resource-card reveal"
-              key={p.href}
-              data-cta-label={p.title}
-            >
+            // The anchor text is the card title only, which is what search
+            // engines read for the target page. A stretched link keeps the
+            // whole card clickable, and data-cta-label still gives the
+            // delegated GA4 listener a readable report row.
+            <article className="resource-card card-stretch reveal" key={p.href}>
               <span className="resource-kicker">{p.kicker}</span>
-              <h3>{p.title}</h3>
+              <h3>
+                <Link
+                  href={p.href}
+                  className="card-anchor"
+                  data-cta-label={p.title}
+                >
+                  {p.title}
+                </Link>
+              </h3>
               <p>{p.body}</p>
-            </Link>
+            </article>
           ))}
         </div>
       </div>

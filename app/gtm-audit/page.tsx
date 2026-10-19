@@ -14,7 +14,7 @@ type RelatedLink = { href: string; label: string };
 
 const CONTENT = {
   eyebrow: "FREE OUTSIDE-IN GTM AUDIT",
-  h1: "A free outside-in read on where your pipeline leaks.",
+  h1: "A free GTM audit: where your pipeline leaks",
   intro:
     "Send me your public signals. I read your site, your search footprint, and your funnel the way a buyer sees it, then send back where pipeline is leaking. No stack access needed to start.",
 } as const;
@@ -78,7 +78,7 @@ const RELATED: RelatedLink[] = [
 export const metadata: Metadata = {
   title: "Free outside-in GTM audit",
   description:
-    "A free outside-in GTM read. I review your public signals only, your site, your search footprint, and your funnel as a buyer sees it, and send back where pipeline is leaking. No stack access needed to start.",
+    "A free outside-in GTM read. I review your public signals only: your site, your search footprint, and the path a buyer walks, then send back where it leaks.",
   alternates: { canonical: "https://xsingletary.com/gtm-audit" },
 };
 

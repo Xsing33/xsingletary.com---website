@@ -344,6 +344,23 @@ section{ padding:100px 0; }
 }
 .resource-card h3{ font-size:17px; line-height:1.35; }
 .resource-card p{ color:var(--text-dim); font-size:14.5px; line-height:1.55; }
+
+/* Stretched link: the anchor text stays just the card title, while the whole
+   card stays clickable. */
+.card-stretch{ position:relative; }
+.card-stretch .card-anchor{
+  text-decoration:none;
+  color:inherit;
+}
+.card-stretch .card-anchor::after{
+  content:"";
+  position:absolute;
+  inset:0;
+}
+.card-stretch:focus-within{
+  outline:2px solid var(--cyan);
+  outline-offset:-2px;
+}
 .breadcrumbs{ margin-bottom:26px; }
 .breadcrumbs ol{
   list-style:none;
